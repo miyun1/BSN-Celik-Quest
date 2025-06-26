@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "CK1",
-  "name": "CK1",
+  "mangledName": "MainMenu",
+  "name": "MainMenu",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
