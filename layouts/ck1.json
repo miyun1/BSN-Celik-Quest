@@ -1,49 +1,20 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "MainScene",
-  "name": "MainScene",
+  "mangledName": "CK1",
+  "name": "CK1",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
   "v": 209,
-  "uiSettings": {
-    "grid": false,
-    "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
-    "gridOffsetX": 0,
-    "gridOffsetY": 0,
-    "gridColor": 10401023,
-    "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.546875,
-    "windowMask": false
-  },
+  "uiSettings": {},
   "objectsGroups": [],
   "variables": [],
   "instances": [],
-  "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "NewSprite",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": []
-    }
-  ],
+  "objects": [],
   "objectsFolderStructure": {
-    "folderName": "__ROOT",
-    "children": [
-      {
-        "objectName": "NewSprite"
-      }
-    ]
+    "folderName": "__ROOT"
   },
   "events": [],
   "layers": [
