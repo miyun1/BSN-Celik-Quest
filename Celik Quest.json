@@ -16,7 +16,7 @@
     "pixelsRounding": true,
     "projectUuid": "4ef71978-3a9d-40ec-b351-62f1a1e7ea33",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
     "name": "Celik Quest",
@@ -422,6 +422,486 @@
         "name": "Walk_Up6",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right2.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right3.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right4.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right5.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right6.png\",\"extension\":\".png\"}",
+        "name": "assets\\Walk_Left_Right6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Drink",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Drink2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink3.png\"}",
+        "name": "Drink3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink4.png\"}",
+        "name": "Drink4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink5.png\"}",
+        "name": "Drink5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink6.png\"}",
+        "name": "Drink6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink7.png\"}",
+        "name": "Drink7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink8.png\"}",
+        "name": "Drink8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "WalkDrink6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/WalkDrink6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WalkDrink6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink.png\"}",
+        "name": "assets\\WalkDrink",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink2.png\"}",
+        "name": "assets\\WalkDrink2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink3.png\"}",
+        "name": "assets\\WalkDrink3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink4.png\"}",
+        "name": "assets\\WalkDrink4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink5.png\"}",
+        "name": "assets\\WalkDrink5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/assets_WalkDrink6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink6.png\"}",
+        "name": "assets\\WalkDrink6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting.png\"}",
+        "name": "Waiting",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting2.png\"}",
+        "name": "Waiting2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting3.png\"}",
+        "name": "Waiting3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting4.png\"}",
+        "name": "Waiting4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting5.png\"}",
+        "name": "Waiting5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Waiting6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting6.png\"}",
+        "name": "Waiting6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BGFore.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BGFore.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Walk6",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -480,6 +960,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/arraytools"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/deptheffect"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/recolorizer"
     }
   ],
   "externalLayouts": []
