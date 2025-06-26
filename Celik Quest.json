@@ -510,6 +510,14 @@
         "name": "NewSprite6",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -540,8 +548,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -576,8 +584,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -612,8 +620,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -648,8 +656,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -684,8 +692,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -720,8 +728,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -769,8 +777,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -805,8 +813,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -841,8 +849,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -877,8 +885,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -913,8 +921,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -949,8 +957,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -998,8 +1006,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1034,8 +1042,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1070,8 +1078,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1106,8 +1114,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1142,8 +1150,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1178,8 +1186,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1227,8 +1235,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1263,8 +1271,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1299,8 +1307,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1335,8 +1343,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1371,8 +1379,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1407,8 +1415,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1456,8 +1464,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1492,8 +1500,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1528,8 +1536,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1564,8 +1572,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1600,8 +1608,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1636,8 +1644,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1685,8 +1693,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1721,8 +1729,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1757,8 +1765,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1793,8 +1801,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1829,8 +1837,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1865,8 +1873,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 15.5,
+                    "y": 23
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1924,6 +1932,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/man"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/mainmenu"
     }
   ],
   "externalEvents": [],
