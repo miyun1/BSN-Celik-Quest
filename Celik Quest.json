@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 231,
+    "build": 226,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -902,6 +902,49 @@
         "name": "Walk6",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/background.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "background",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "pixel bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixel bg.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CaveatBrush-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "openFolded.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "openFolded.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "openFolded2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "openFolded2.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -914,6 +957,11 @@
   "variables": [
     {
       "name": "ringgitTotal",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "bankBalance",
       "type": "number",
       "value": 0
     },
