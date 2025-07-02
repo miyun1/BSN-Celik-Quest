@@ -945,6 +945,22 @@
         "name": "openFolded2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "openFolded3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "openFolded3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Open.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Open",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
