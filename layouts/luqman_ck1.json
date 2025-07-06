@@ -301,7 +301,7 @@
       "name": "timerText",
       "persistentUuid": "a9b35b81-ea12-4689-a64a-a4f432be9db7",
       "width": 0,
-      "x": 350,
+      "x": 492,
       "y": 172,
       "zOrder": 57,
       "numberProperties": [],
@@ -1667,7 +1667,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "string": "'SPACE' to OPEN",
       "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
       "textAlignment": "center",
@@ -1997,10 +2002,27 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "startText"
+                "startText",
+                "Text",
+                "=",
+                "\"SHIFT STARTED\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "startText",
+                "Tween",
+                "\"fading\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
               ]
             },
             {
@@ -2036,7 +2058,40 @@
                     "",
                     "\"gameTimer\"",
                     ">=",
-                    "1"
+                    "shiftTimer"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gameTimer\"",
+                    ">=",
+                    "shiftTimer/2"
                   ]
                 },
                 {
@@ -2052,18 +2107,43 @@
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "shiftTimer",
-                    "-",
-                    "ToNumber(TimeFormatter::SecondsToHHMMSS(shiftTimer))"
+                    "customerSpeed",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gameTimer\"",
+                    ">=",
+                    "shiftTimer - 30"
                   ]
                 },
                 {
                   "type": {
-                    "value": "ResetTimer"
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "",
-                    "\"gameTimer\""
+                    "customerSpeed",
+                    "=",
+                    "3"
                   ]
                 }
               ]
@@ -3091,16 +3171,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "shiftTimer",
-            "-",
-            "TimeDelta()"
-          ]
-        },
-        {
-          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
@@ -3129,7 +3199,7 @@
             "timerText",
             "Text",
             "=",
-            "shiftTimer"
+            "TimeFormatter::SecondsToHHMMSS(abs(TimerElapsedTime(\"gameTimer\") - (shiftTimer + 1)))"
           ]
         }
       ]
