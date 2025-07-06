@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 231,
+    "build": 226,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -136,598 +136,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Idle_Down.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Down6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Up6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Up6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Idle_Left_Right6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Down6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Down6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Left_Right6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Up6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Walk_Up6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right2.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right2.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right3.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right3.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right4.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right4.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right5.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right5.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Walk_Left_Right6.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Walk_Left_Right6.png\",\"extension\":\".png\"}",
-        "name": "assets\\Walk_Left_Right6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Drink",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Drink2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Down6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Down6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink3.png\"}",
-        "name": "Drink3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink4.png\"}",
-        "name": "Drink4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink5.png\"}",
-        "name": "Drink5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink6.png\"}",
-        "name": "Drink6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink7.png\"}",
-        "name": "Drink7",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink8.png\"}",
-        "name": "Drink8",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "WalkDrink6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Idle_Left_Right6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Idle_Left_Right6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink5.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/WalkDrink6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\WalkDrink6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/assets_WalkDrink.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink.png\"}",
@@ -832,30 +240,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
-        "name": "NewSprite3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Walk.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -904,14 +288,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/background.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "background",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "pixel bg.png",
         "kind": "image",
         "metadata": "",
@@ -939,26 +315,562 @@
         "userAdded": false
       },
       {
-        "file": "openFolded2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "openFolded2.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "openFolded3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "openFolded3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Open.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Open",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Spawner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Spawner",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Despawner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Despawner",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/OrderBox.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "OrderBox",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Fences.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fences.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Outdoor_Decor_Free.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Outdoor_Decor_Free.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/collision.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Collision",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tree.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tree",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "atlas_16x.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "atlas_16x.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Down6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left_Right6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Left_Right6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Up6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Idle_Up6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Down6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Down6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Up6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Up6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CK2_Minigame.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CK2_Minigame",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CK2_Minigame2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cloth_hidden",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_Left_Right6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Walk_Left_Right6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
+        "name": "Drink6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
+        "name": "Drink7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
+        "name": "Drink8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
+        "name": "Drink9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
+        "name": "Drink10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink11.png\"}",
+        "name": "Drink11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink12.png\"}",
+        "name": "Drink12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink13.png\"}",
+        "name": "Drink13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink14.png\"}",
+        "name": "Drink14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink15.png\"}",
+        "name": "Drink15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink16.png\"}",
+        "name": "Drink16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink17.png\"}",
+        "name": "Drink17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Drink18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink18.png\"}",
+        "name": "Drink18",
         "smoothed": false,
         "userAdded": false
       }
@@ -1015,7 +927,12 @@
       "referenceTo": "/layouts/luqman_ck1"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/player_movement"
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1032,6 +949,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/recolorizer"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/timeformatter"
     }
   ],
   "externalLayouts": []

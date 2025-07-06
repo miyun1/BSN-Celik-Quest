@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.49508400737488956,
+    "zoomFactor": 0.6897782140104509,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,20 +26,10 @@
     {
       "name": "basicWage",
       "type": "number",
-      "value": 1500
+      "value": 1700
     },
     {
       "name": "commission",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "tipJar",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "jarInterest",
       "type": "number",
       "value": 0
     },
@@ -52,11 +42,6 @@
       "name": "hasCert",
       "type": "boolean",
       "value": false
-    },
-    {
-      "name": "interestRate",
-      "type": "number",
-      "value": 0.0018
     },
     {
       "name": "gameState",
@@ -72,6 +57,11 @@
       "name": "shiftTimer",
       "type": "number",
       "value": 120
+    },
+    {
+      "name": "customerCount",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -181,24 +171,7 @@
       "persistentUuid": "8a0307b6-ee72-4a7d-b393-1aa050d6994b",
       "width": 150,
       "x": 400,
-      "y": 375,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 228,
-      "keepRatio": true,
-      "layer": "",
-      "name": "orderBox",
-      "persistentUuid": "283ea431-43fa-4b37-af2b-f8fc616cf98b",
-      "width": 150,
-      "x": 600,
-      "y": 375,
+      "y": 425,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -230,8 +203,8 @@
       "name": "debugText",
       "persistentUuid": "17db31b2-174d-43f4-aa04-19bfd9e82230",
       "width": 0,
-      "x": 248,
-      "y": 179,
+      "x": 10,
+      "y": 61,
       "zOrder": 52,
       "numberProperties": [],
       "stringProperties": [],
@@ -240,16 +213,97 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 214,
+      "depth": 1,
+      "height": 302,
       "keepRatio": true,
       "layer": "Foreground",
       "name": "openClose",
       "persistentUuid": "62988a18-14af-40cb-b643-f0b4ba0feff1",
-      "width": 214,
-      "x": 580,
-      "y": 565,
+      "width": 302,
+      "x": 604,
+      "y": 609,
       "zOrder": 53,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 228,
+      "layer": "",
+      "name": "orderBox2",
+      "persistentUuid": "329daf91-e4a0-402a-b092-f9a7e4f04e10",
+      "width": 150,
+      "x": 600,
+      "y": 425,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 95,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "NewText",
+      "persistentUuid": "db60b662-2dd2-45a6-82a0-5ead71aac441",
+      "width": 207,
+      "x": 249,
+      "y": 348,
+      "zOrder": 54,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Foreground",
+      "name": "customerText",
+      "persistentUuid": "9ec09851-2929-4402-b692-7e97d3c68e17",
+      "width": 0,
+      "x": 212,
+      "y": 646,
+      "zOrder": 55,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "startText",
+      "persistentUuid": "8ebf2d8f-96ec-41cd-8a21-7980716c338e",
+      "width": 0,
+      "x": 272,
+      "y": 403,
+      "zOrder": 56,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "timerText",
+      "persistentUuid": "a9b35b81-ea12-4689-a64a-a4f432be9db7",
+      "width": 0,
+      "x": 350,
+      "y": 172,
+      "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -292,7 +346,7 @@
           "Scale": "Scale",
           "MaxScale": 25,
           "HorizonY": 400,
-          "PowerY": 0.15,
+          "PowerY": 0.2,
           "PercentAwayFromHorizon": 2.00000000000182
         },
         {
@@ -541,12 +595,12 @@
           "directions": [
             {
               "looping": true,
-              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"assets\\\\\\\\WalkDrink\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":6,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAYAAABEmHeFAAAAAXNSR0IArs4c6QAAA6NJREFUeF7tmr9rFFEQx19AEBSvsTHGMoJgcXCFVY78AQpWgk2aVIKC2IuF2AdBwSoWKa0ES5twYnlwgiCYwsIYG5sTBEFQ5t3N5u1yd3lv82a+bna22fxY9vvmO/OZebt3S84Oc6DFDiy1OHYL3RxwBoAVQasdMABanX4L3gCwGmi1AwZAq9NvwScD0Dm98neebePf+8n3S00BWj91vbmvR8eP1s/tZ1LBUvA3L5/zazh/caW0lh/f9t3rzz+dJARofQoYWQDo+NH6Ev5HA0DBb65fWQigJARofTYf1QDQ8aP1pfyPAiAmeCZje/dT9imA1mfzUQ0AHT9aX9L/7ABITIGUBKD10Q0AHT9aP9X/ZAAoQN7/c7BEKG0N6O/SBqD1j3oIO+nxnzT/owHgvS8/AHOi37245Wti7c4rf6brcj8Mhw9fKH3e/qAKwPyfPH/m9j8ZACpuLnIq/tWrXb+wvY+jAoLcb4JCAND6KAAZAHT8aP3c/kcDQB2Q9ldU9NTt+fx98MQDcKH/0J9zF3/4AITURxeg+T95/Z4bwFoA0EKo81PRIwBA66MbADp+tH5O/6MA4C7M+302IHwg5C2QxARA6/NbKJ5A2gWAjh+tL+l/NACLTJAufgaNjJgFoYb+PG1eG3INGtro/Ev5nwzA173lsPEXP19aPRDZ/4diZAJaHwUgFyAq/kXe09q08p/b/yQAFiVBywAugFMHdz0bf5af+7O2frULoPW/vF3zLyckt6D8vMeeswekTYek/lENoG78tQBgI84M+0UddO6vi5kfboHGT3fd+PptxwD4NYyGrrP9QEUf1YG5AArvX551rtubWKMQP02Akjbpkv5o6D5ce99SAKZJ2Hh2wxuQ+wOw6vaHX0Xu3Htz+K/R0P+sCUAJPqUCnAnA1IWNwSM1/3f6j8vDbwqBlv+zmq/3pmYDTpoA1AWoA4ddJ/yEUgsA0qFjvLl1OIGUJgDF/6s38Lo8fTQB5Jip4OhA+l/kYDqJ6hZhmaj5v5WmULD70AcgGLnh9+Ol9p/c/dga1vFAbm45jQ7I2uGn0mE31OqAIQDkA9J/zosWhGEdFM2v23PH2YFET4Bq4jUSHtMZql+TkISwCmLYgSWnX7XQpLVifA+v0c5BmIfjwlcLgP8tAakJa+L1iCJrok+pa44GIPXGdr050AQHDIAmZMnWKOaAASBmrd24CQ4YAE3Ikq1RzAEDQMxau3ETHDAAmpAlW6OYA/8AXyjNXZyXoSQAAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":6,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAYAAABEmHeFAAAAAXNSR0IArs4c6QAAAZ1JREFUeF7tmDFqQkEQhtfKC4gIlpIukMoDeIuQwhsItiF1sA14AwvxFh7AKpBOLAURL2Cl7HtsFC2e7qy7m8xnoyA6O9/833OeNcMDAooJ1BT3TusQMAhACFQTQADV46d5BCADqgkggOrx0zwCkAHVBBBA9fhpHgHIgGoCCKB6/DSPAGRANQEEUD1+mkcAMqCaAAKoHj/NIwAZUE0AAVSPn+aDCDD5HB76H19BvstnJNSHv2/+goWWEBJC3xD6XPQuP+ObP7EA7Vbz4A4zGryZ9/H092zrzVb8/VVwqA9/Sf7EAbUBfH1+Ks7w0uua7/mieD37WZpYAlAf/r75Ewtgf3o6jfrVhXq125sYP4nUh78kfwhQtWNVvI+Af1tAsQBuB3driFt/7HOsFcjWon65BsG/XL9vzZ9YAFvo/D4g5v7vBk79030Y/O+7/wwigJPABTLGlf9yMzn/N4j6j//37b/wDyaAcJXm4xBIQgABkmCnaC4EECCXSXCOJAQQIAl2iuZCAAFymQTnSEIAAZJgp2guBBAgl0lwjiQEjj80VjCmxTt7AAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"assets\\\\WalkDrink\",\"assets\\\\WalkDrink2\",\"assets\\\\WalkDrink3\",\"assets\\\\WalkDrink4\",\"assets\\\\WalkDrink5\",\"assets\\\\WalkDrink6\"],\"name\":\"Drink\"}}",
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"assets\\\\\\\\WalkDrink\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":6,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAYAAABEmHeFAAAAAXNSR0IArs4c6QAAA7NJREFUeF7tmrFrFFEQxl9AEBSvsTHGMgHB4uAKqxz5AxSsBJs0VwkKYi8WYh8EBaukSGklWNqEEwuLgxMEwRQWXmJjc0IgICjzcrN5u9xd9m3ezOdmZ5u75Jb93vxmvnmze7fg7DACDSaw0ODYLXQj4MwAVgSNJmAGaHT6LXgzgNVAowmYARqdfgs+2gCt80t/Z2EbH46irxebArR+7HpTn4+OH62fmmdUwVLwd1Yu+TVcvrqUW8uvvZF7++23kzQBWp8CRhYAOn60vgT/0gag4Htr1+caUNIEaH2Gj2oA6PjR+lL8SxmgTPDsjM2dr8l3AbQ+w0c1AHT8aH1J/skNILELxCQArY9uAOj40fqx/KMNQAHy/M/BkkNpNKD/SwNA6590E3bW4z9r/EsbgGdfvgHmRH94fdfXxOr9N/6Vzkt9MxzefKH0efxBFYDxP7r/TM0/2gBU3FzkVPzLN9p+YbtfhpkJUj8JCg2A1kcZkA2Ajh+tn5p/aQNQB6T5ioqeuj2/jg9H7uDTlrvSfeKNkLr4wxugafr0+c/+c3F9dAHO4q8VP1pfin8lAxB07vzhTEwm0DAAWj9sAIgCRMeP1k/Jv5QBuAvzvD8NAI9AEgZA6/NTKN6BtAsAHT9aX5J/aQPMgyBd/LzLEIhpJtTQn6XNa0OuQUMbnX8p/tEG+LG7GE492ftry/si408oRhDQ+igDcgGi4p/Hntamlf/U/KMMMC8JWgC4AM7tP/De+LP4yr9q6xe7AFr/+/tV/3BCcgSlhw0hc2ZA2nRI6p/UAKrGX8kADOLCoJvVQevRmhj8cAQav9hx41v3HBvAr2E4cK3Nxyr6qA7MBZCx37roXLtzhEYhftoBctqkS/rDgft882NDDTBJwvrL2x5A6i/AiuMPPwrbfvju+KPhwL/XNEDOfEoFONUAEwrr/adq/Le7z/Kb38QEWvynNV/PpmIDjtoBqAtQBw67TvgNpZYBSIeOcW/jeAdS2gEo/oNO3+vy7qNpQI6ZCo4OJP8sB5OdqGoR5h01+6/cLhRMH/oGCLbc8PfxUvMndz9GwzrekL0Np9EBWTv8VjrshlodMDQAcUDy57xomTCsg6z5tTvuNBNI6R2gmHiNhJfpDMWfSUiasGjEsANL7n7FQpPWKsM9PEc7B2EeTmu+Sgb43xIQm7A6no8osjpyil1zaQPEXtjONwJ1IGAGqEOWbI1iBMwAYmjtwnUgYAaoQ5ZsjWIEzABiaO3CdSBgBqhDlmyNYgT+AUEJvl1EFZesAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":6,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1],[2],[3],[4],[5]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAAgCAYAAABEmHeFAAAAAXNSR0IArs4c6QAAAcJJREFUeF7tmDFKA0EUhieVFwhBsJR0QioP4C3EIjcQbENqsRVyAwvxFh7ASrALKQURL2CVMAkjiykW9j3mZ3hfmiyEnX/e//7v7WRHiQ8OBHZgFLh2SseBBACEILQDABC6/RQPAGQgtAMAELr9FA8AZCC0AwAQuv0UDwBkILQDABC6/RQPAGQgtAMAELr9FA8AZCC0AwAQuv0UDwBkILQDABC6/RTvAsDT/d12vnx0WWtIS9T6Q/bseY+6frW+xUu30KpNUOortUvz1XtQ6lu0zQCcnU62pQkPtzdpsXr+A/Lz69u8fh/dan11ANX1q/Wt/psDmg24vpju9zG7ukzvr2/765ePdaoFgFpfPQDU9av1Lf6bAciPn/PxydGg3vz8phr/C9T66gGgrl+tb/UfAPrOWD2/qwOAvm0AmwEoZ8DyGCzHn/xd6wiUtVT66gDivxiAHL7uY6jm+b8MZ6W+OoD4f3gJM3QAmp8A3RCW6xqT///JpPs2ora+EkD8tw1gNwCMR+nmb1cC2Lx5DgUM9R8AHMxniXYdAIB2e8fOHRwAAAcTWaJdBwCg3d6xcwcHAMDBRJZo1wEAaLd37NzBgR25G1YwAHJ2vQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Drink13\",\"Drink14\",\"Drink15\",\"Drink16\",\"Drink17\",\"Drink18\"],\"name\":\"Drink\"}}",
               "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink",
+                  "image": "Drink13",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -582,7 +636,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink2",
+                  "image": "Drink14",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -618,7 +672,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink3",
+                  "image": "Drink15",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -654,7 +708,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink4",
+                  "image": "Drink16",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -690,7 +744,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink5",
+                  "image": "Drink17",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -726,7 +780,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\WalkDrink6",
+                  "image": "Drink18",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1072,7 +1126,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Spawner",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1082,7 +1136,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "Spawner",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1133,7 +1187,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "Despawner",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1143,7 +1197,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "Despawner",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1214,7 +1268,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "OrderBox",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1224,7 +1278,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
+                  "image": "OrderBox",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1521,6 +1575,213 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "orderBox2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isOccupied",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 15,
+            "innerStrength": 0.5,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "OrderBox",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "OrderBox",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "startText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "'SPACE' to OPEN",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 120,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "'SPACE' to OPEN",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 120,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "customerText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 60,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "timerText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SHIFT TIMER",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 100,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "29;29;29",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SHIFT TIMER",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 100,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1530,7 +1791,16 @@
         "objectName": "Customer"
       },
       {
+        "objectName": "startText"
+      },
+      {
+        "objectName": "customerText"
+      },
+      {
         "objectName": "debugText"
+      },
+      {
+        "objectName": "timerText"
       },
       {
         "objectName": "popupText"
@@ -1546,6 +1816,9 @@
       },
       {
         "objectName": "orderBox"
+      },
+      {
+        "objectName": "orderBox2"
       },
       {
         "objectName": "background"
@@ -1575,15 +1848,6 @@
           },
           "parameters": [
             "",
-            "\"gameTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
             "\"spawnTimer\""
           ]
         },
@@ -1595,6 +1859,26 @@
             "gameState",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "customerCount",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "customerSpeed",
+            "=",
+            "1"
           ]
         }
       ]
@@ -1633,6 +1917,23 @@
                 "=",
                 "\"Closed\""
               ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "startText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "timerText"
+              ]
             }
           ],
           "events": [
@@ -1665,6 +1966,15 @@
                     "=",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "timerText",
+                    "\"gameTimer\""
+                  ]
                 }
               ]
             }
@@ -1687,6 +1997,23 @@
           "actions": [
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "startText"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "timerText",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
@@ -1698,6 +2025,49 @@
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gameTimer\"",
+                    ">=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "shiftTimer",
+                    "-",
+                    "ToNumber(TimeFormatter::SecondsToHHMMSS(shiftTimer))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gameTimer\""
+                  ]
+                }
+              ]
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -1719,7 +2089,7 @@
                         "",
                         "\"spawnTimer\"",
                         ">=",
-                        "RandomInRange(2, 4)"
+                        "RandomFloatInRange(0.9, 2.5)"
                       ]
                     },
                     {
@@ -1956,11 +2326,13 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Drop Customer",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1974,29 +2346,6 @@
                     },
                     {
                       "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "orderBox",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "orderBox",
-                        "isOccupied",
-                        "False",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "BehaviorActivated"
                       },
                       "parameters": [
@@ -2006,129 +2355,316 @@
                     },
                     {
                       "type": {
+                        "value": "ScalableCapability::ScalableBehavior::Value"
+                      },
+                      "parameters": [
+                        "Customer",
+                        "Scale",
+                        ">=",
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "\"waitingTimer\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "orderBox",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox",
+                            "isOccupied",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "\"waitingTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "=",
+                            "40"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox",
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Arreter"
+                          },
+                          "parameters": [
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "DepthEffect_Sprite",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Scale",
+                            "=",
+                            "15"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Animation",
+                            "=",
+                            "\"Waiting\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "=",
+                            "orderBox.CenterX()",
+                            "=",
+                            "orderBox.CenterY() - 50"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox",
+                            "isOccupied",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "waiting",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "orderBox",
+                            "Effect",
+                            "\"Effect\"",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "=",
-                        "40"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::LinkObjects"
-                      },
-                      "parameters": [
-                        "",
-                        "orderBox",
-                        "Customer"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Arreter"
-                      },
-                      "parameters": [
-                        "Customer"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "DepthEffect_Sprite",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "Scale",
-                        "=",
-                        "15"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "Animation",
-                        "=",
-                        "\"Waiting\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "=",
-                        "orderBox.CenterX()",
-                        "=",
-                        "orderBox.CenterY()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "orderBox",
-                        "isOccupied",
-                        "True",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "waiting",
-                        "True",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::EnableEffect"
-                      },
-                      "parameters": [
-                        "orderBox",
-                        "Effect",
-                        "\"Effect\"",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "orderBox2",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox2",
+                            "isOccupied",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "\"waitingTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ChangePlan"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "=",
+                            "40"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox2",
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Arreter"
+                          },
+                          "parameters": [
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "DepthEffect_Sprite",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Scale",
+                            "=",
+                            "15"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Animation",
+                            "=",
+                            "\"Waiting\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "=",
+                            "orderBox2.CenterX()",
+                            "=",
+                            "orderBox2.CenterY() - 50"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox2",
+                            "isOccupied",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "waiting",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "orderBox2",
+                            "Effect",
+                            "\"Effect\"",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -2144,145 +2680,295 @@
                     },
                     {
                       "type": {
-                        "value": "LinkedObjects::PickObjectsLinkedTo"
-                      },
-                      "parameters": [
-                        "",
-                        "orderBox",
-                        "Customer",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "orderBox",
-                        "isOccupied",
-                        "False",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox",
+                            "Customer",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox",
+                            "isOccupied",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RemoveObjectTimer"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "\"waitingTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::RemoveLinkBetween"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox",
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "300 * Customer.direction",
+                            "0",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Animation",
+                            "=",
+                            "\"Drink\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "orderBox",
+                            "Effect",
+                            "\"Effect\"",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "customerCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "popupText",
+                            "Customer.CenterX()",
+                            "Customer.CenterY()",
+                            "\"UI\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Text",
+                            "=",
+                            "\":D\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Tween",
+                            "\"popup\"",
+                            "popupText.CenterY() - 50",
+                            "\"swingTo\"",
+                            "1",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Tween",
+                            "\"popupFade\"",
+                            "0",
+                            "\"swingTo\"",
+                            "4",
+                            "yes"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "RemoveObjectTimer"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "\"waitingTimer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "LinkedObjects::RemoveLinkBetween"
-                      },
-                      "parameters": [
-                        "",
-                        "orderBox",
-                        "Customer"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "300 * Customer.direction",
-                        "0",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Customer",
-                        "Animation",
-                        "=",
-                        "\"Drink\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "EffectCapability::EffectBehavior::EnableEffect"
-                      },
-                      "parameters": [
-                        "orderBox",
-                        "Effect",
-                        "\"Effect\"",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "commission",
-                        "+",
-                        "5"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "popupText",
-                        "Customer.CenterX()",
-                        "Customer.CenterY()",
-                        "\"UI\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "popupText",
-                        "Text",
-                        "=",
-                        "\"+5\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                      },
-                      "parameters": [
-                        "popupText",
-                        "Tween",
-                        "\"popup\"",
-                        "popupText.CenterY() - 50",
-                        "\"swingTo\"",
-                        "1",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "popupText",
-                        "Tween",
-                        "\"popupFade\"",
-                        "0",
-                        "\"swingTo\"",
-                        "2.5",
-                        "yes"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::PickObjectsLinkedTo"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox2",
+                            "Customer",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "orderBox2",
+                            "isOccupied",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RemoveObjectTimer"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "\"waitingTimer\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "LinkedObjects::RemoveLinkBetween"
+                          },
+                          "parameters": [
+                            "",
+                            "orderBox2",
+                            "Customer"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "300 * Customer.direction",
+                            "0",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Customer",
+                            "Animation",
+                            "=",
+                            "\"Drink\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "orderBox2",
+                            "Effect",
+                            "\"Effect\"",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "customerCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "popupText",
+                            "Customer.CenterX()",
+                            "Customer.CenterY()",
+                            "\"UI\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Text",
+                            "=",
+                            "\":D\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Tween",
+                            "\"popup\"",
+                            "popupText.CenterY() - 50",
+                            "\"swingTo\"",
+                            "1",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "popupText",
+                            "Tween",
+                            "\"popupFade\"",
+                            "0",
+                            "\"swingTo\"",
+                            "4",
+                            "yes"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -2319,6 +3005,22 @@
               "parameters": []
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "gameState",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": []
         }
       ],
       "parameters": []
@@ -2389,6 +3091,16 @@
       "actions": [
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "shiftTimer",
+            "-",
+            "TimeDelta()"
+          ]
+        },
+        {
+          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
@@ -2396,6 +3108,28 @@
             "Text",
             "=",
             "commission"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "customerText",
+            "Text",
+            "=",
+            "customerCount"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "timerText",
+            "Text",
+            "=",
+            "shiftTimer"
           ]
         }
       ]
