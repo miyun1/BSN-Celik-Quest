@@ -1,0 +1,148 @@
+{
+  "associatedLayout": "Luqman_CK1",
+  "name": "paySlip_Calculations",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "kwsp",
+            "=",
+            "gross * kwspRate"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "socso",
+            "=",
+            "gross * socsoRate"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "nett",
+            "=",
+            "gross - kwsp - socso"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "custNumText",
+            "Text",
+            "=",
+            "customerCount"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "grossNumText",
+            "Text",
+            "=",
+            "\"RM \" + ToString(roundTo(gross, 2))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "kwspNumText",
+            "Text",
+            "=",
+            "\"RM \" + ToString(roundTo(kwsp, 2))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "socsoNumText",
+            "Text",
+            "=",
+            "\"RM \" + ToString(roundTo(socso, 2))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "nettNumText",
+            "Text",
+            "=",
+            "\"RM \" + ToString(roundTo(nett, 2))"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "tipNumText",
+            "Text",
+            "=",
+            "\"RM \" + ToString(roundTo(tipsGain, 2))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "customerIcon",
+            "Animation",
+            "=",
+            "\"Drink\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "ringgitTotal",
+            "+",
+            "nett"
+          ]
+        }
+      ]
+    }
+  ]
+}

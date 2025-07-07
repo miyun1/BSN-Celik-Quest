@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 226,
+    "build": 231,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -873,6 +873,190 @@
         "name": "Drink18",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "PaperBG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "PaperBG.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/isDrag8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "isDrag8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Crown Coin_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown Coin_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/General Items/b15f7a6621cd76db63aedd5b53136da4a3b3a690e7a0d8b4cf907cc9e067de19_Crown Coin_No Shadow.png",
+          "name": "Crown Coin_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Crown Coin_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown Coin_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/General Items/e58724386c4e35a550e1009721adc894251ce8940be2b2c27d42de2a0bd12816_Crown Coin_Shadow.png",
+          "name": "Crown Coin_Shadow.png"
+        }
+      },
+      {
+        "file": "kwsplogo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "kwsplogo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "socsologo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "socsologo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Desappearing_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Desappearing_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Desappearing_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Desappearing_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Desappearing_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Desappearing_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Desappearing_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Desappearing_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/HomeButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "HomeButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/HomeButton2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/HomeButton2.png\"}",
+        "name": "HomeButton2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -931,6 +1115,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/player_movement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/payslip_calculations"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -961,6 +1149,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/timeformatter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
     }
   ],
   "externalLayouts": []

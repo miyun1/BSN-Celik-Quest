@@ -496,7 +496,7 @@
             "Player",
             "Animation",
             "=",
-            "\"Idle_Up\""
+            "\"Walk_Up\""
           ]
         }
       ],
