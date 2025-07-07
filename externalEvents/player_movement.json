@@ -360,10 +360,10 @@
               },
               "parameters": [
                 "",
-                "dfcfd4adc9b37e829db99a5f418b1a590529d39d6355c0f0bb0daab7e7ffa7f8_Run_06.wav",
+                "walk_sfx (mp3cut.net).mp3",
                 "",
-                "20",
-                ""
+                "30",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -453,10 +453,10 @@
               },
               "parameters": [
                 "",
-                "dfcfd4adc9b37e829db99a5f418b1a590529d39d6355c0f0bb0daab7e7ffa7f8_Run_06.wav",
+                "walk_sfx (mp3cut.net).mp3",
                 "",
-                "20",
-                ""
+                "30",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -546,10 +546,10 @@
               },
               "parameters": [
                 "",
-                "dfcfd4adc9b37e829db99a5f418b1a590529d39d6355c0f0bb0daab7e7ffa7f8_Run_06.wav",
+                "walk_sfx (mp3cut.net).mp3",
                 "",
-                "20",
-                ""
+                "30",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]

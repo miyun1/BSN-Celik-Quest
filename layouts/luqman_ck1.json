@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5290357402156857,
+    "zoomFactor": 0.3925161175488238,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -61,7 +61,7 @@
     {
       "name": "shiftTimer",
       "type": "number",
-      "value": 30
+      "value": 60
     },
     {
       "name": "customerCount",
@@ -102,6 +102,11 @@
       "name": "nett",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "glassSpeed",
+      "type": "number",
+      "value": 25
     }
   ],
   "instances": [
@@ -276,8 +281,8 @@
       "name": "startText",
       "persistentUuid": "8ebf2d8f-96ec-41cd-8a21-7980716c338e",
       "width": 0,
-      "x": 272,
-      "y": 403,
+      "x": 275,
+      "y": 380,
       "zOrder": 56,
       "numberProperties": [],
       "stringProperties": [],
@@ -293,7 +298,7 @@
       "persistentUuid": "a9b35b81-ea12-4689-a64a-a4f432be9db7",
       "width": 0,
       "x": 492,
-      "y": 172,
+      "y": 170,
       "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
@@ -601,9 +606,42 @@
       "name": "homeButton",
       "persistentUuid": "ddc3106f-e9b2-4215-8c94-f9117c302b3c",
       "width": 152,
-      "x": 825,
-      "y": 323,
+      "x": 900,
+      "y": 500,
       "zOrder": 76,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 66,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "hourglass",
+      "persistentUuid": "eb7dd452-2848-42f1-8e79-e9e1adc7d874",
+      "width": 66,
+      "x": 445,
+      "y": 170,
+      "zOrder": 77,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 720,
+      "layer": "Transition",
+      "name": "blackBox",
+      "persistentUuid": "998a8463-134e-46d8-9661-a7146c72accc",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 78,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2081,7 +2119,7 @@
       "content": {
         "bold": true,
         "isOutlineEnabled": true,
-        "isShadowEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "0;0;0",
         "outlineThickness": 2,
@@ -2152,7 +2190,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
       "string": "SHIFT TIMER",
       "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
       "textAlignment": "center",
@@ -2165,7 +2208,7 @@
       "content": {
         "bold": true,
         "isOutlineEnabled": true,
-        "isShadowEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "29;29;29",
         "outlineThickness": 3,
@@ -2644,8 +2687,8 @@
       },
       "content": {
         "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
@@ -2943,7 +2986,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -3389,7 +3445,7 @@
       "content": {
         "bold": true,
         "isOutlineEnabled": false,
-        "isShadowEnabled": false,
+        "isShadowEnabled": true,
         "italic": false,
         "outlineColor": "255;255;255",
         "outlineThickness": 2,
@@ -3626,7 +3682,36 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonColorTintTween",
+          "type": "ButtonStates::ButtonColorTintTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleColorTint": "255;255;255",
+          "FocusedColorTint": "192;192;192",
+          "PressedColorTint": "64;64;64",
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "HomeButton",
@@ -3669,6 +3754,71 @@
                       {
                         "x": 2,
                         "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "hourglass",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hourglass2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 490,
+                    "y": 490
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 155,
+                        "y": 0
+                      },
+                      {
+                        "x": 825,
+                        "y": 0
+                      },
+                      {
+                        "x": 825,
+                        "y": 980
+                      },
+                      {
+                        "x": 155,
+                        "y": 980
                       }
                     ]
                   ]
@@ -3800,6 +3950,9 @@
       },
       {
         "objectName": "coinTips"
+      },
+      {
+        "objectName": "hourglass"
       }
     ]
   },
@@ -3858,11 +4011,128 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "glassSpeed",
+            "=",
+            "25"
+          ]
+        },
+        {
+          "type": {
             "value": "HideLayer"
           },
           "parameters": [
             "",
             "\"PaySlip Layer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Transition\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "CK1_music_bg.mp3",
+            "0",
+            "yes",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "openBell_sfx.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "served_sfx (mp3cut.net).mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "pickup_sfx (mp3cut.net).mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "coinCollect_sfx.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "timeup_sfx (mp3cut.net).mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "clockTick_sfx.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "walk_sfx.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "blackBox",
+            "Tween",
+            "\"fading\"",
+            "0",
+            "\"swingTo\"",
+            "2",
+            "no"
           ]
         }
       ]
@@ -3877,7 +4147,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3892,6 +4161,17 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "FadeMusicVolume"
+              },
+              "parameters": [
+                "",
+                "0",
+                "5",
+                "2"
+              ]
+            },
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3919,9 +4199,121 @@
               "parameters": [
                 "timerText"
               ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "hourglass"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"floatup\"",
+                    "275",
+                    "375",
+                    "\"swingTo\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"floatdown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"floatup\"",
+                    "275",
+                    "375",
+                    "\"swingTo\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"floatup\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"floatdown\"",
+                    "275",
+                    "380",
+                    "\"swingTo\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -3960,6 +4352,19 @@
                     "timerText",
                     "\"gameTimer\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "openBell_sfx.mp3",
+                    "1",
+                    "",
+                    "50",
+                    "1"
+                  ]
                 }
               ]
             }
@@ -3993,20 +4398,6 @@
             },
             {
               "type": {
-                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-              },
-              "parameters": [
-                "startText",
-                "Tween",
-                "\"fading\"",
-                "0",
-                "\"linear\"",
-                "1",
-                "yes"
-              ]
-            },
-            {
-              "type": {
                 "value": "Montre"
               },
               "parameters": [
@@ -4024,9 +4415,58 @@
                 "=",
                 "\"Open\""
               ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "hourglass",
+                ""
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "startText",
+                    "Tween",
+                    "\"fading\"",
+                    "0",
+                    "\"easeInQuad\"",
+                    "2",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "walk_sfx.mp3",
+                    "5",
+                    "yes",
+                    "30",
+                    "1.5"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -4067,6 +4507,48 @@
                     "=",
                     "2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ModPitchMusicChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "0",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "timeup_sfx (mp3cut.net).mp3",
+                    "3",
+                    "no",
+                    "50",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -4101,6 +4583,59 @@
                     "=",
                     "2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "glassSpeed",
+                    "=",
+                    "50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "hourglass",
+                    "ShakeObject_PositionAngle",
+                    "1",
+                    "5",
+                    "5",
+                    "0",
+                    "0.08",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "timerText",
+                    "ShakeObject_PositionAngle",
+                    "1",
+                    "5",
+                    "5",
+                    "0",
+                    "0.08",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModPitchMusicChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "0",
+                    "=",
+                    "1.15"
+                  ]
                 }
               ]
             },
@@ -4115,7 +4650,7 @@
                     "",
                     "\"gameTimer\"",
                     ">=",
-                    "shiftTimer * (1/4)"
+                    "shiftTimer * (3/4)"
                   ]
                 },
                 {
@@ -4134,6 +4669,72 @@
                     "customerSpeed",
                     "=",
                     "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "glassSpeed",
+                    "=",
+                    "75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "hourglass",
+                    "ShakeObject_PositionAngle",
+                    "0.5",
+                    "5",
+                    "5",
+                    "0",
+                    "0.08",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "timerText",
+                    "ShakeObject_PositionAngle",
+                    "0.5",
+                    "5",
+                    "5",
+                    "0",
+                    "0.08",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModPitchMusicChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "0",
+                    "=",
+                    "1.4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "clockTick_sfx.mp3",
+                    "3",
+                    "yes",
+                    "50",
+                    "1"
                   ]
                 }
               ]
@@ -4401,7 +5002,6 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4616,6 +5216,19 @@
                             "=",
                             "1.5"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "pickup_sfx (mp3cut.net).mp3",
+                            "1",
+                            "",
+                            "50",
+                            "RandomFloatInRange(0.9, 1.1)"
+                          ]
                         }
                       ]
                     },
@@ -4792,6 +5405,19 @@
                             "Scale",
                             "=",
                             "1.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "pickup_sfx (mp3cut.net).mp3",
+                            "1",
+                            "",
+                            "50",
+                            "RandomFloatInRange(0.9, 1.1)"
                           ]
                         }
                       ]
@@ -4979,6 +5605,19 @@
                             "cup",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "served_sfx (mp3cut.net).mp3",
+                            "2",
+                            "",
+                            "50",
+                            "RandomFloatInRange(0.9, 1.1)"
+                          ]
                         }
                       ],
                       "events": [
@@ -5015,7 +5654,7 @@
                                   "parameters": [
                                     "tipChance",
                                     "<=",
-                                    "0.8"
+                                    "0.4"
                                   ]
                                 }
                               ],
@@ -5196,6 +5835,19 @@
                             "cup2",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "served_sfx (mp3cut.net).mp3",
+                            "2",
+                            "",
+                            "50",
+                            "RandomFloatInRange(0.9, 1.1)"
+                          ]
                         }
                       ],
                       "events": [
@@ -5232,7 +5884,7 @@
                                   "parameters": [
                                     "tipChance",
                                     "<=",
-                                    "0.2"
+                                    "0.4"
                                   ]
                                 }
                               ],
@@ -5426,6 +6078,19 @@
                         "=",
                         "1.5"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "coinCollect_sfx.mp3",
+                        "1",
+                        "",
+                        "40",
+                        "RandomFloatInRange(0.95, 1.05)"
+                      ]
                     }
                   ]
                 },
@@ -5460,6 +6125,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5489,6 +6155,14 @@
               "parameters": [
                 "",
                 "\"PaySlip Layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "hourglass"
               ]
             }
           ],
@@ -5520,6 +6194,29 @@
                   "parameters": [
                     "Customer",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    "+",
+                    "5"
                   ]
                 }
               ]
@@ -5576,12 +6273,42 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "",
-                    "\"man\"",
-                    "yes"
+                    "blackBox",
+                    "Tween",
+                    "\"fading\"",
+                    "255",
+                    "\"linear\"",
+                    "1",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"man\"",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -5618,6 +6345,15 @@
             "\"outerStrength\"",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "orderBox",
+            ""
+          ]
         }
       ]
     },
@@ -5647,6 +6383,14 @@
             "\"Effect\"",
             "\"outerStrength\"",
             "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "orderBox"
           ]
         }
       ]
@@ -5701,6 +6445,22 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Rotate"
+          },
+          "parameters": [
+            "hourglass",
+            "glassSpeed",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -5860,7 +6620,7 @@
       "isLocked": false,
       "name": "PaySlip Layer",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -5912,12 +6672,53 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Transition",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonColorTintTween",
+      "type": "ButtonStates::ButtonColorTintTween"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "DepthEffect_Sprite",
@@ -5946,6 +6747,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "SpriteRecolorizer",
