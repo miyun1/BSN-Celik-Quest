@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "man",
   "gdVersion": {
     "build": 231,
     "major": 5,
@@ -1585,8 +1585,128 @@
       {
         "file": "assets/ck8.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/ck8.png\"}",
         "name": "ck7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "needsObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "needsObject.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Drink_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Drink_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Drink_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Drink_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Drink_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Drink_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Food4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Food4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Food5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Food5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Food3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Food3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "wantsObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wantsObject.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Wants6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wants6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Wants8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wants8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Wants4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wants4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "deleteObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "deleteObject.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "needsSlot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "needsSlot.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "wantsSlot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "wantsSlot.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/ck9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "ck8",
         "smoothed": false,
         "userAdded": false
       }
@@ -1687,11 +1807,6 @@
       "value": 0
     },
     {
-      "name": "activeRate",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "careerXP",
       "type": "structure",
       "children": [
@@ -1716,7 +1831,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/mainscene"
+      "referenceTo": "/layouts/man"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/luqman_ck1"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1724,11 +1843,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/man"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/luqman_ck1"
+      "referenceTo": "/layouts/mainscene"
     }
   ],
   "externalEvents": [

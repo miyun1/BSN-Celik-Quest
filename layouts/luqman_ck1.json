@@ -4371,6 +4371,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4997,6 +4998,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Drop Customer",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5945,6 +5947,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Coin Tip",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6125,7 +6128,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6442,25 +6444,25 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "hourglass",
+                "glassSpeed",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "Rotate"
-          },
-          "parameters": [
-            "hourglass",
-            "glassSpeed",
-            ""
-          ]
-        }
-      ]
     }
   ],
   "layers": [
