@@ -6621,7 +6621,7 @@
       "isLocked": false,
       "name": "PaySlip Layer",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

@@ -1763,6 +1763,14 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "paperBG1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "paperBG1.jpg",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1858,11 +1866,24 @@
       "effects": [],
       "behaviors": [],
       "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "name": "legends",
+      "type": "legends::legends",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "legends"
+      },
       {
         "objectName": "blackBox"
       },
@@ -1942,6 +1963,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/legends"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/mytileset"

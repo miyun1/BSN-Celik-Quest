@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5117784035210183,
+    "zoomFactor": 0.47893418845352553,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -57,6 +57,11 @@
       "name": "glassSpeed",
       "type": "number",
       "value": 25
+    },
+    {
+      "name": "correctCounter",
+      "type": "number",
+      "value": 0
     },
     {
       "name": "mistakeCounter",
@@ -102,6 +107,11 @@
       "name": "speedRate",
       "type": "number",
       "value": 1
+    },
+    {
+      "name": "isUp",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -282,6 +292,120 @@
       "x": 873,
       "y": 650,
       "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "legends",
+      "persistentUuid": "33811a5a-be54-4fa4-8582-744be101c0d2",
+      "width": 0,
+      "x": -97,
+      "y": 677,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 746,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "resultBG",
+      "persistentUuid": "6eaf9b1f-85f8-4506-896c-2bf952f5462f",
+      "width": 1513,
+      "x": -108,
+      "y": -12,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "correctText",
+      "persistentUuid": "f6cb5d8c-a490-4f03-bd87-c807ac8783ef",
+      "width": 0,
+      "x": 120,
+      "y": 200,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "wrongText",
+      "persistentUuid": "24ccbf20-d798-4bab-a45f-54c7e956c4ed",
+      "width": 0,
+      "x": 120,
+      "y": 450,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "correctNumText",
+      "persistentUuid": "afcfe98e-cf6e-4c0c-a79f-6e77b0b22db4",
+      "width": 0,
+      "x": 850,
+      "y": 200,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "wrongNumText",
+      "persistentUuid": "9484ce3d-b610-42d3-800c-5c67f5b1f899",
+      "width": 0,
+      "x": 850,
+      "y": 450,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 152,
+      "keepRatio": true,
+      "layer": "Result",
+      "name": "homeButn",
+      "persistentUuid": "b517edbf-6574-4619-b96c-206cb3986afd",
+      "width": 152,
+      "x": 1024,
+      "y": 502,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1572,11 +1696,322 @@
         "characterSize": 50,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "resultBG",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "paperBG1.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 89,
+                        "y": 32
+                      },
+                      {
+                        "x": 929,
+                        "y": 32
+                      },
+                      {
+                        "x": 929,
+                        "y": 997
+                      },
+                      {
+                        "x": 89,
+                        "y": 997
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "correctText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Good Decisions:",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 120,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Good Decisions:",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 120,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "wrongText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Bad Decisions:",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 120,
+      "color": {
+        "b": 235,
+        "g": 235,
+        "r": 235
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Bad Decisions:",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 120,
+        "color": "235;235;235"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "correctNumText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 120,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 120,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "wrongNumText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 120,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 120,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "homeButn",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "HomeButton2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 2
+                      },
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 2,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Result",
+        "children": [
+          {
+            "objectName": "resultBG"
+          },
+          {
+            "objectName": "correctText"
+          },
+          {
+            "objectName": "correctNumText"
+          },
+          {
+            "objectName": "wrongNumText"
+          },
+          {
+            "objectName": "wrongText"
+          },
+          {
+            "objectName": "homeButn"
+          }
+        ]
+      },
       {
         "folderName": "UI",
         "children": [
@@ -1650,6 +2085,15 @@
           "parameters": [
             "",
             "\"Transition\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Result\""
           ]
         },
         {
@@ -1762,6 +2206,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2011,6 +2456,128 @@
           ],
           "events": [
             {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "isUp",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Up\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "legends",
+                        "+",
+                        "-270"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "isUp",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "isUp",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Down\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "legends",
+                        "+",
+                        "270"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "isUp",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2184,6 +2751,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "countdown",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2507,6 +3075,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "correct",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2650,6 +3219,16 @@
                         "price",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "correctCounter",
+                        "+",
+                        "1"
                       ]
                     },
                     {
@@ -2909,6 +3488,16 @@
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
+                            "careerXP.XP",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
                             "totalXP",
                             "+",
                             "XP"
@@ -3110,6 +3699,16 @@
                         "",
                         "35",
                         "RandomFloatInRange(0.9,1.1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "correctCounter",
+                        "+",
+                        "1"
                       ]
                     }
                   ],
@@ -3333,6 +3932,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "incorrect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3453,6 +4053,16 @@
                         "",
                         "35",
                         "RandomFloatInRange(0.9,1.1)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "mistakeCounter",
+                        "+",
+                        "1"
                       ]
                     }
                   ],
@@ -3943,6 +4553,16 @@
                         "35",
                         "RandomFloatInRange(0.9,1.1)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "mistakeCounter",
+                        "+",
+                        "1"
+                      ]
                     }
                   ],
                   "events": [
@@ -4165,6 +4785,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "ItemsDrop",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4642,6 +5263,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "setPrice",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5194,6 +5816,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "objectCollide",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5324,7 +5947,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5338,7 +5960,17 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Result\""
+              ]
+            }
+          ],
           "events": [
             {
               "colorB": 228,
@@ -5380,11 +6012,22 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "homeButn",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
                   },
                   "parameters": [
                     "",
-                    "\"Space\""
+                    "\"Left\""
                   ]
                 },
                 {
@@ -5447,7 +6090,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Update",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5464,6 +6106,28 @@
                 "hourGlass",
                 "glassSpeed",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "correctNumText",
+                "Text",
+                "=",
+                "correctCounter"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "wrongNumText",
+                "Text",
+                "=",
+                "mistakeCounter"
               ]
             }
           ]
@@ -5562,6 +6226,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Result",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

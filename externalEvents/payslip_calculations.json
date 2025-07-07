@@ -139,7 +139,7 @@
           "parameters": [
             "ringgitTotal",
             "+",
-            "nett"
+            "nett + tipsGain"
           ]
         }
       ]

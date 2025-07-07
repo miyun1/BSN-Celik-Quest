@@ -5518,6 +5518,16 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    ">=",
+                    "5"
+                  ]
                 }
               ],
               "actions": [],
