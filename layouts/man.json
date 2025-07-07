@@ -2037,9 +2037,9 @@
           "MarginRight": 0
         },
         {
-          "maxSpeed": 100,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 100,
           "acceleration": 100000,
           "allowDiagonals": false,
           "angleOffset": 0,
