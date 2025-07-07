@@ -1,0 +1,217 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "myTileSet",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": [
+    {
+      "areaMaxX": 336,
+      "areaMaxY": 240,
+      "areaMaxZ": 0,
+      "areaMinX": 0,
+      "areaMinY": 0,
+      "areaMinZ": 0,
+      "defaultName": "CK2_TileSet",
+      "description": "",
+      "fullName": "ObjectCK2",
+      "isUsingLegacyInstancesRenderer": false,
+      "name": "CK2_TileSet",
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "NewTileMap3",
+          "type": "TileMap::SimpleTileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "atlasImage": "Path_Tile.png",
+            "rowCount": 6,
+            "columnCount": 3,
+            "tileSize": 16,
+            "tilesWithHitBox": ""
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewTileMap2",
+          "type": "TileMap::SimpleTileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "atlasImage": "Cliff_Tile.png",
+            "rowCount": 6,
+            "columnCount": 3,
+            "tileSize": 16,
+            "tilesWithHitBox": ""
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewTileMap",
+          "type": "TileMap::SimpleTileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "atlasImage": "atlas_16x.png",
+            "rowCount": 16,
+            "columnCount": 32,
+            "tileSize": 16,
+            "tilesWithHitBox": ""
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "NewTileMap"
+          },
+          {
+            "objectName": "NewTileMap2"
+          },
+          {
+            "objectName": "NewTileMap3"
+          }
+        ]
+      },
+      "objectsGroups": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTileMap",
+          "persistentUuid": "b4673959-8f36-4e57-9ec6-e13999c8fa19",
+          "width": 0,
+          "x": 16,
+          "y": 16,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":19,\"dimY\":9,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[300,48,49,50,51,48,49,208,209,299,308,309,310,311,48,49,208,209,-1],[332,80,81,82,83,80,81,82,83,331,340,341,342,343,80,81,82,83,-1],[-1,112,113,114,115,176,177,242,243,-1,240,241,146,147,112,113,114,115,-1],[-1,144,145,402,403,144,145,338,339,-1,144,145,402,403,144,145,146,147,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,372,373,374,375,308,309,272,273,-1,372,373,374,375,372,373,336,337,-1],[-1,404,405,406,407,340,341,342,343,-1,404,405,406,407,404,405,406,407,-1],[297,304,305,178,179,112,113,370,371,297,368,369,114,115,368,369,370,371,301],[329,144,145,146,147,144,145,146,147,329,144,145,146,147,144,145,402,403,333]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTileMap",
+          "persistentUuid": "2fbd8090-9a91-41f6-ac31-fbf4e22a1e0c",
+          "width": 0,
+          "x": 32,
+          "y": 48,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":17,\"dimY\":11,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,142,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,301,-1,-1,-1,323,324,-1,-1,-1,300,-1,-1,-1,-1,-1],[484,485,333,-1,484,485,355,356,-1,452,453,332,-1,-1,-1,452,453]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTileMap2",
+          "persistentUuid": "15f0abb5-4d51-4f7e-959f-a7b4115a69c4",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":21,\"dimY\":15,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTileMap3",
+          "persistentUuid": "02f0bbef-2d72-4b36-bf83-7d6885e28358",
+          "width": 0,
+          "x": 0,
+          "y": 80,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":21,\"dimY\":8,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]]}]}"
+            }
+          ],
+          "initialVariables": []
+        }
+      ],
+      "eventsFunctions": [],
+      "propertyDescriptors": [],
+      "variants": []
+    }
+  ]
+}

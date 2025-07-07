@@ -4371,7 +4371,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6307,7 +6306,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"man\"",
+                        "\"HomeWorld\"",
                         "yes"
                       ]
                     }

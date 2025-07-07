@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3673257545058826,
+    "zoomFactor": 0.5117784035210183,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -51,26 +51,72 @@
     {
       "name": "countdown",
       "type": "number",
-      "value": 10
+      "value": 30
     },
     {
       "name": "glassSpeed",
       "type": "number",
       "value": 25
+    },
+    {
+      "name": "mistakeCounter",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "maxStrikes",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "name": "startMoney",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "spawnRate",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "name": "cheapChance",
+      "type": "number",
+      "value": 65
+    },
+    {
+      "name": "mediumChance",
+      "type": "number",
+      "value": 25
+    },
+    {
+      "name": "expensiveChance",
+      "type": "number",
+      "value": 10
+    },
+    {
+      "name": "chances",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "speedRate",
+      "type": "number",
+      "value": 1
     }
   ],
   "instances": [
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 64,
+      "depth": 2,
+      "height": 128,
+      "keepRatio": true,
       "layer": "",
       "name": "needsSlot",
       "persistentUuid": "74009c68-239e-44d6-be18-628367af9b06",
-      "width": 64,
-      "x": 349,
-      "y": 503,
+      "width": 128,
+      "x": 262,
+      "y": 535,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -78,15 +124,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 128,
       "keepRatio": true,
       "layer": "",
       "name": "wantsSlot",
       "persistentUuid": "e84c493e-810f-4da0-8fe7-d7f7610b6029",
-      "width": 0,
-      "x": 887,
-      "y": 496,
+      "width": 128,
+      "x": 852,
+      "y": 535,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -104,38 +151,6 @@
       "x": 546,
       "y": 75,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "money",
-      "persistentUuid": "ca53d8cf-251d-4fa4-9e07-88e1e6cf6c70",
-      "width": 0,
-      "x": 20,
-      "y": 75,
-      "zOrder": 10,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "XPTotal",
-      "persistentUuid": "8164a160-d9f8-4a15-99af-6610cf19238d",
-      "width": 0,
-      "x": 1020,
-      "y": 75,
-      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -218,6 +233,55 @@
       "x": 492,
       "y": 75,
       "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 910,
+      "keepRatio": true,
+      "layer": "back",
+      "name": "CK2Background",
+      "persistentUuid": "8dbbbcc6-0df4-4f5d-a3a4-478dcad75d19",
+      "width": 1365,
+      "x": -48,
+      "y": -108,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "needBasket",
+      "persistentUuid": "beee0166-4fa1-45fc-9dad-59c6669a863e",
+      "width": 0,
+      "x": 279,
+      "y": 650,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "wantBasket",
+      "persistentUuid": "0804e9d8-6b8a-4400-97ca-9078c8b789da",
+      "width": 0,
+      "x": 873,
+      "y": 650,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -843,12 +907,12 @@
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"wantsSlot\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":47,\\\"width\\\":48,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAvCAYAAAClgknJAAAAAXNSR0IArs4c6QAAAN1JREFUaEPtmMENAjEMBH2VUAqd0AkvOrlOKIVKQPwi5ChZrZXjpLknFzveGcODLU7+bCefPwhwtEEMYMAkwAqZAO1yDNgIzQYYMAHa5RiwEZoNMGACtMsxYCM0G2DABGiXY8BGaDaQDDwj3uZ9Uvk1xn86TAdYPXyWNAuUBviHYa0A++JVmdmrW2edhiv0aMJcOje9ms97Z7LSti57f6/8DnwvaMPMUFPPzAz823NoQB1i9XkCrCbOCh1NHAMYKCbAz2gxULkdBmRkxQUYKAYqt8OAjKy4AAPFQOV2H77/DjC9LSwgAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"wantsSlot\"],\"name\":\"wantsSlot\"}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "wantsSlot.png",
+                  "image": "wantsSlot",
                   "points": [
                     {
                       "name": "XP",
@@ -874,16 +938,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 48,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 48,
+                        "y": 47
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 47
                       }
                     ]
                   ]
@@ -921,7 +985,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "needsSlot.png",
+                  "image": "assets\\basket2.png",
                   "points": [
                     {
                       "name": "XP",
@@ -947,16 +1011,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 48,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 48,
+                        "y": 47
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 47
                       }
                     ]
                   ]
@@ -977,7 +1041,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
       "string": "100",
       "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
       "textAlignment": "center",
@@ -1293,7 +1362,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
       "animations": [
         {
           "name": "default",
@@ -1344,6 +1418,160 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CK2Background",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ck2_bg.jpg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1080,
+                        "y": 0
+                      },
+                      {
+                        "x": 1080,
+                        "y": 720
+                      },
+                      {
+                        "x": 0,
+                        "y": 720
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "needBasket",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "string": "Need",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Need",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "wantBasket",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "string": "Want",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 50,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Want",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 50,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1368,6 +1596,12 @@
             "objectName": "countdownTimer"
           },
           {
+            "objectName": "needBasket"
+          },
+          {
+            "objectName": "wantBasket"
+          },
+          {
             "objectName": "startText"
           },
           {
@@ -1389,6 +1623,9 @@
       },
       {
         "objectName": "wantsSlot"
+      },
+      {
+        "objectName": "CK2Background"
       }
     ]
   },
@@ -1427,6 +1664,90 @@
             "\"swingFrom\"",
             "2",
             "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "spawnRate",
+            "=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "ringgitTotal",
+            "-",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "startMoney",
+            "=",
+            "ringgitTotal"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "totalMoney",
+            "=",
+            "ringgitTotal"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "mistakeCounter",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadSound"
+          },
+          "parameters": [
+            "",
+            "openBell_sfx.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "market.mp3",
+            "yes",
+            "15",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "CK1_music_bg.mp3",
+            "0",
+            "yes",
+            "5",
+            "1"
           ]
         }
       ]
@@ -1615,6 +1936,19 @@
                     "=",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "openBell_sfx.mp3",
+                    "1",
+                    "",
+                    "50",
+                    "1"
+                  ]
                 }
               ]
             }
@@ -1635,6 +1969,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "startText",
+                "=",
+                "465"
+              ]
+            },
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -1671,6 +2015,59 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    ">=",
+                    "careerXP.XP_Required"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.Level",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    "-",
+                    "careerXP.XP_Required"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP_Required",
+                    "=",
+                    "int(ceil(10 * pow(careerXP.Level, 1.3)))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -1689,6 +2086,25 @@
                     "\"easeInQuad\"",
                     "2",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DropTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "chances",
+                    "=",
+                    "RandomInRange(0,100)"
                   ]
                 }
               ]
@@ -1824,9 +2240,24 @@
                         ">=",
                         "countdown"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"gameTimer\""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetNumberVariable"
@@ -1835,6 +2266,235 @@
                         "gameState",
                         "=",
                         "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModPitchMusicChannel"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StopSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StopSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "timeup_sfx (mp3cut.net).mp3",
+                        "3",
+                        "no",
+                        "50",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"countdown\"",
+                        ">=",
+                        "countdown/2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "glassSpeed",
+                        "=",
+                        "50"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                      },
+                      "parameters": [
+                        "hourGlass",
+                        "ShakeObject_PositionAngle",
+                        "1",
+                        "5",
+                        "5",
+                        "0",
+                        "0.08",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                      },
+                      "parameters": [
+                        "countdownTimer",
+                        "ShakeObject_PositionAngle",
+                        "1",
+                        "5",
+                        "5",
+                        "0",
+                        "0.08",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModPitchMusicChannel"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "=",
+                        "1.15"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "speedRate",
+                        "=",
+                        "1.5"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"countdown\"",
+                        ">=",
+                        "countdown * (3/4)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "glassSpeed",
+                        "=",
+                        "75"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                      },
+                      "parameters": [
+                        "hourGlass",
+                        "ShakeObject_PositionAngle",
+                        "0.5",
+                        "5",
+                        "5",
+                        "0",
+                        "0.08",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                      },
+                      "parameters": [
+                        "countdownTimer",
+                        "ShakeObject_PositionAngle",
+                        "0.5",
+                        "5",
+                        "5",
+                        "0",
+                        "0.08",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModPitchMusicChannel"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "=",
+                        "1.4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "clockTick_sfx.mp3",
+                        "3",
+                        "yes",
+                        "50",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "spawnRate",
+                        "=",
+                        "1"
                       ]
                     }
                   ]
@@ -1847,7 +2507,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "correct",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1933,80 +2592,6 @@
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink1\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink2\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink3\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food1\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food2\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food3\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -2062,59 +2647,284 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "XP",
-                        "=",
-                        "RandomInRange(6,10)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPCounter",
-                        "Text",
-                        "=",
-                        "\"+\" + XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "totalXP",
-                        "+",
-                        "XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPTotal",
-                        "Text",
-                        "=",
-                        "totalXP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
                         "price",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Correct.aac",
+                        "",
+                        "35",
+                        "RandomFloatInRange(0.9,1.1)"
                       ]
                     }
                   ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "totalXP",
+                            "+",
+                            "XP"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPTotal",
+                            "Text",
+                            "=",
+                            "totalXP"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "MettreXY"
@@ -2230,47 +3040,6 @@
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "wantsObject",
-                            "Animation",
-                            "=",
-                            "\"Wants1\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "wantsObject",
-                            "Animation",
-                            "=",
-                            "\"Wants2\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "wantsObject",
-                            "Animation",
-                            "=",
-                            "\"Wants3\""
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
@@ -2326,59 +3095,167 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "XP",
-                        "=",
-                        "RandomInRange(6,10)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPCounter",
-                        "Text",
-                        "=",
-                        "\"+\" + XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "totalXP",
-                        "+",
-                        "XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPTotal",
-                        "Text",
-                        "=",
-                        "totalXP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
                         "price",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Correct.aac",
+                        "",
+                        "35",
+                        "RandomFloatInRange(0.9,1.1)"
                       ]
                     }
                   ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "totalXP",
+                            "+",
+                            "XP"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPTotal",
+                            "Text",
+                            "=",
+                            "totalXP"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "MettreXY"
@@ -2456,7 +3333,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "incorrect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2503,80 +3379,6 @@
                       "parameters": [
                         "needsObject",
                         "Draggable"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink1\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink2\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Drink3\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food1\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food2\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
-                          },
-                          "parameters": [
-                            "needsObject",
-                            "Animation",
-                            "=",
-                            "\"Food3\""
-                          ]
-                        }
                       ]
                     },
                     {
@@ -2636,59 +3438,284 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "XP",
-                        "=",
-                        "RandomInRange(1,5)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPCounter",
-                        "Text",
-                        "=",
-                        "\"+\" + XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "totalXP",
-                        "+",
-                        "XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPTotal",
-                        "Text",
-                        "=",
-                        "totalXP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
                         "price",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Wrong.aac",
+                        "",
+                        "35",
+                        "RandomFloatInRange(0.9,1.1)"
                       ]
                     }
                   ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Drink3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "\"Food3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "totalXP",
+                            "+",
+                            "XP"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPTotal",
+                            "Text",
+                            "=",
+                            "totalXP"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "MettreXY"
@@ -2900,59 +3927,167 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "XP",
-                        "=",
-                        "RandomInRange(1,5)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPCounter",
-                        "Text",
-                        "=",
-                        "\"+\" + XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "totalXP",
-                        "=",
-                        "totalXP+XP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "XPTotal",
-                        "Text",
-                        "=",
-                        "totalXP"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
                         "price",
                         "=",
                         "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Wrong.aac",
+                        "",
+                        "35",
+                        "RandomFloatInRange(0.9,1.1)"
                       ]
                     }
                   ],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants1\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants2\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "\"Wants3\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "XP",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPCounter",
+                            "Text",
+                            "=",
+                            "\"+\" + XP"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "totalXP",
+                            "=",
+                            "totalXP+XP"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "XPTotal",
+                            "Text",
+                            "=",
+                            "totalXP"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "MettreXY"
@@ -3030,12 +4165,12 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "ItemsDrop",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3048,11 +4183,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ResetTimer"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "",
-                        "\"DropTimer\""
+                        "chances",
+                        "=",
+                        "RandomFloatInRange(0,1)"
                       ]
                     },
                     {
@@ -3108,7 +4244,7 @@
                       "parameters": [
                         "wantsObject",
                         "0",
-                        "RandomFloatInRange(100,300)",
+                        "RandomFloatInRange(50,150)",
                         "1"
                       ]
                     },
@@ -3119,7 +4255,7 @@
                       "parameters": [
                         "needsObject",
                         "0",
-                        "RandomFloatInRange(100,300)",
+                        "RandomFloatInRange(50,150)",
                         "1"
                       ]
                     },
@@ -3158,77 +4294,19 @@
                         "",
                         "\"DropTimer\"",
                         ">=",
-                        "1"
+                        "spawnRate"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
+                        "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "",
-                        "wantsObject",
-                        "RandomFloatInRange(0,1280)",
-                        "RandomFloatInRange(-100,-50)",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                      },
-                      "parameters": [
-                        "wantsObject",
-                        "Animation",
+                        "chances",
                         "=",
-                        "RandomInRange(1,3)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "needsObject",
-                        "RandomFloatInRange(0,1280)",
-                        "RandomFloatInRange(-100,-50)",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                      },
-                      "parameters": [
-                        "needsObject",
-                        "Animation",
-                        "=",
-                        "RandomInRange(1,6)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "wantsObject",
-                        "0",
-                        "RandomFloatInRange(100,300)",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "needsObject",
-                        "0",
-                        "RandomFloatInRange(100,300)",
-                        "1"
+                        "RandomInRange(0,100)"
                       ]
                     },
                     {
@@ -3239,27 +4317,319 @@
                         "",
                         "\"DropTimer\""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "needsObject",
-                        "Scale",
-                        "=",
-                        "2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "chances",
+                            "<",
+                            "65"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "needsObject",
+                            "RandomFloatInRange(100,1180)",
+                            "RandomFloatInRange(-100,-50)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "0",
+                            "RandomFloatInRange(150,250) * speedRate ",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "RandomInRange(1, 2)"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "wantsObject",
-                        "Scale",
-                        "=",
-                        "2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::And"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "chances",
+                                "<",
+                                "90"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "chances",
+                                ">=",
+                                "65"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "wantsObject",
+                            "RandomFloatInRange(100,1180)",
+                            "RandomFloatInRange(-100,-50)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "needsObject",
+                            "RandomFloatInRange(100,1180)",
+                            "RandomFloatInRange(-100,-50)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "0",
+                            "RandomFloatInRange(150,250) * speedRate ",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "0",
+                            "RandomFloatInRange(150,250) * speedRate ",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "RandomInRange(1, 2)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "RandomInRange(3, 4)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "chances",
+                            ">=",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "wantsObject",
+                            "RandomFloatInRange(100,1180)",
+                            "RandomFloatInRange(-100,-50)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "needsObject",
+                            "RandomFloatInRange(100,1180)",
+                            "RandomFloatInRange(-100,-50)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "0",
+                            "RandomFloatInRange(150,250) * speedRate ",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "0",
+                            "RandomFloatInRange(150,250) * speedRate ",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "wantsObject",
+                            "Animation",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "needsObject",
+                            "Animation",
+                            "=",
+                            "RandomInRange(5, 6)"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3272,7 +4642,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "setPrice",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3452,7 +4821,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "10"
+                        "8"
                       ]
                     }
                   ]
@@ -3512,7 +4881,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "4"
+                        "6"
                       ]
                     }
                   ]
@@ -3572,7 +4941,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "12"
+                        "10"
                       ]
                     }
                   ]
@@ -3632,7 +5001,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "30"
+                        "20"
                       ]
                     }
                   ]
@@ -3692,7 +5061,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "50"
+                        "15"
                       ]
                     }
                   ]
@@ -3752,7 +5121,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "100"
+                        "30"
                       ]
                     }
                   ]
@@ -3812,7 +5181,7 @@
                       "parameters": [
                         "price",
                         "=",
-                        "200"
+                        "45"
                       ]
                     }
                   ]
@@ -3825,7 +5194,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "objectCollide",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3956,6 +5324,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3996,9 +5365,9 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "careerXP.XP",
-                        "+",
-                        "totalXP"
+                        "ringgitTotal",
+                        "=",
+                        "totalMoney"
                       ]
                     }
                   ]
@@ -4060,7 +5429,7 @@
                       },
                       "parameters": [
                         "gameState",
-                        "\"man\"",
+                        "\"HomeWorld\"",
                         "1"
                       ]
                     }
@@ -4078,6 +5447,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Update",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4271,6 +5641,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "Text",

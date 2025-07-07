@@ -1,5 +1,5 @@
 {
-  "firstLayout": "man",
+  "firstLayout": "HomeWorld",
   "gdVersion": {
     "build": 231,
     "major": 5,
@@ -1709,6 +1709,60 @@
         "name": "ck8",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/basket2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\basket2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/wantsSlot2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "wantsSlot",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "ck2_bg.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "ck2_bg.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "market.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "market.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Correct.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Correct.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Wrong.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Wrong.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1779,6 +1833,31 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewTileMap4",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "atlas_16x.png",
+        "rowCount": 16,
+        "columnCount": 32,
+        "tileSize": 16,
+        "tilesWithHitBox": ""
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CK2_TileSet",
+      "type": "myTileSet::CK2_TileSet",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
@@ -1786,6 +1865,12 @@
     "children": [
       {
         "objectName": "blackBox"
+      },
+      {
+        "objectName": "NewTileMap4"
+      },
+      {
+        "objectName": "CK2_TileSet"
       }
     ]
   },
@@ -1831,7 +1916,7 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/man"
+      "referenceTo": "/layouts/homeworld"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -1843,7 +1928,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/mainscene"
+      "referenceTo": "/layouts/map"
     }
   ],
   "externalEvents": [
@@ -1857,6 +1942,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mytileset"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/extendedvariables"

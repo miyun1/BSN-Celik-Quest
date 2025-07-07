@@ -1,8 +1,8 @@
 {
   "b": 65,
   "disableInputWhenNotFocused": true,
-  "mangledName": "man",
-  "name": "man",
+  "mangledName": "HomeWorld",
+  "name": "HomeWorld",
   "r": 65,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.0269425874981593,
+    "zoomFactor": 1.9284316855174606,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -227,9 +227,9 @@
       "name": "CK2_Minigame",
       "persistentUuid": "3e412972-07ea-4d0c-b624-77d6874fca86",
       "width": 0,
-      "x": 1444,
-      "y": 872,
-      "zOrder": 3,
+      "x": 1427,
+      "y": 893,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -530,7 +530,7 @@
       "width": 0,
       "x": 1595,
       "y": 587,
-      "zOrder": 5,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1057,6 +1057,22 @@
       "x": 1594,
       "y": 565,
       "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "CK2_TileSet",
+      "persistentUuid": "b5f3ca3e-23bc-4f22-9ac8-9dbc4d963d75",
+      "width": 0,
+      "x": 1302,
+      "y": 900,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -5124,6 +5140,15 @@
           },
           "parameters": [
             "",
+            "market.mp3"
+          ]
+        },
+        {
+          "type": {
+            "value": "PreloadMusic"
+          },
+          "parameters": [
+            "",
             "main_music_bg.mp3"
           ]
         },
@@ -5734,6 +5759,24 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+          },
+          "parameters": [
+            "",
+            "\"mappart\"",
+            "0",
+            "0",
+            "100"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
