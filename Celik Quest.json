@@ -1913,6 +1913,7 @@
       "value": 0
     },
     {
+      "folded": true,
       "name": "careerXP",
       "type": "structure",
       "children": [
@@ -2018,6 +2019,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sway"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/choose"
     }
   ],
   "externalLayouts": []
