@@ -423,8 +423,6 @@
           "value": "",
           "type": "Behavior",
           "label": "Scalable capability",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "ScalableCapability::ScalableBehavior"
           ],
@@ -434,36 +432,24 @@
           "value": "1",
           "type": "Number",
           "label": "Max scale when the object is at the bottom of the screen (Default: 1)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MaxScale"
         },
         {
           "value": "0",
           "type": "Number",
           "label": "Y position that represents a horizon where objects appear infinitely small  (Default: 0)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "HorizonY"
         },
         {
           "value": "2",
           "type": "Number",
           "label": "Exponential rate of change (Default: 2)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "PowerY"
         },
         {
           "value": "",
           "type": "Number",
           "label": "Percent away from the horizon",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PercentAwayFromHorizon"
         }

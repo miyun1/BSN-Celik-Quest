@@ -641,27 +641,18 @@
           "value": "1",
           "type": "Number",
           "label": "Value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "CurrentValue"
         },
         {
           "value": "3",
           "type": "Number",
           "label": "Maximum value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MaxValue"
         },
         {
           "value": "",
           "type": "Number",
           "label": "Previous high value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousHighValue"
         },
@@ -669,9 +660,6 @@
           "value": "1",
           "type": "Number",
           "label": "Previous high value conservation duration (in seconds)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousHighValueDuration"
         }
@@ -2457,7 +2445,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
           "group": "Bar",
           "extraInformation": [
             "Label",
@@ -2470,7 +2457,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
           "group": "Bar",
           "extraInformation": [
             "Label",
@@ -2483,7 +2469,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
           "group": "Bar",
           "extraInformation": [
             "Label",
@@ -2496,7 +2481,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
           "group": "Bar",
           "extraInformation": [
             "Label",
@@ -2509,18 +2493,12 @@
           "value": "3",
           "type": "Number",
           "label": "Maximum value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MaxValue"
         },
         {
           "value": "3",
           "type": "Number",
           "label": "Initial value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "InitialValue"
         },
         {
@@ -2528,8 +2506,6 @@
           "type": "Number",
           "label": "",
           "description": "It's used to detect a change at hot reload.",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousInitialValue"
         },
@@ -2537,26 +2513,20 @@
           "value": "1",
           "type": "Number",
           "label": "Previous high value conservation duration (in seconds)",
-          "description": "",
           "group": "Animation",
-          "extraInformation": [],
           "name": "PreviousHighValueDuration"
         },
         {
           "value": "0.25",
           "type": "Number",
           "label": "Easing duration",
-          "description": "",
           "group": "Animation",
-          "extraInformation": [],
           "name": "EasingDuration"
         },
         {
           "value": "true",
           "type": "Boolean",
           "label": "Show the label",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "Label"
           ],
@@ -2567,7 +2537,6 @@
           "type": "Boolean",
           "label": "",
           "description": "Only used by the scene editor.",
-          "group": "",
           "extraInformation": [
             "Buffer"
           ],
@@ -2579,7 +2548,6 @@
           "type": "String",
           "label": "",
           "description": "Only used by the scene editor.",
-          "group": "",
           "extraInformation": [
             "Label"
           ],
@@ -2591,7 +2559,6 @@
           "type": "String",
           "label": "",
           "description": "Only used by the scene editor.",
-          "group": "",
           "extraInformation": [
             "FillBar"
           ],

@@ -18,11 +18,47 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3673257545059031,
+    "zoomFactor": 0.40575189059441147,
     "windowMask": false
   },
-  "objectsGroups": [],
-  "variables": [],
+  "objectsGroups": [
+    {
+      "name": "FoodPopup",
+      "objects": [
+        {
+          "name": "Panel"
+        },
+        {
+          "name": "OptionFood1"
+        },
+        {
+          "name": "popupTitleText"
+        },
+        {
+          "name": "option1Text"
+        },
+        {
+          "name": "OptionFood2"
+        },
+        {
+          "name": "OptionFood3"
+        },
+        {
+          "name": "option2Text"
+        },
+        {
+          "name": "option3Text"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "canAccess",
+      "type": "boolean",
+      "value": true
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -227,8 +263,8 @@
       "name": "CK2_Minigame",
       "persistentUuid": "3e412972-07ea-4d0c-b624-77d6874fca86",
       "width": 0,
-      "x": 1427,
-      "y": 893,
+      "x": 1422,
+      "y": 1003,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -261,7 +297,7 @@
       "width": 0,
       "x": 1047,
       "y": 873,
-      "zOrder": 11,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -948,15 +984,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 41,
       "keepRatio": true,
       "layer": "UI",
       "name": "ringgitText",
       "persistentUuid": "649b2a5f-a509-4a05-b552-06024f3c7b3c",
-      "width": 0,
+      "width": 169,
       "x": 140,
-      "y": 145,
+      "y": 150,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -966,13 +1003,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 3.0612244897959187,
-      "height": 100,
+      "height": 50,
       "layer": "UI",
       "name": "ringgitIcon",
       "persistentUuid": "d0938576-71e1-4ace-a3d5-733186159336",
-      "width": 100,
+      "width": 50,
       "x": 90,
-      "y": 175,
+      "y": 150,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -1112,6 +1149,607 @@
       "x": 1315,
       "y": 956,
       "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "timerText",
+      "persistentUuid": "b285a879-bc73-4d59-933c-30a9dc35d2a7",
+      "width": 0,
+      "x": 555,
+      "y": 125,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "debug",
+      "name": "debugText",
+      "persistentUuid": "093a1d53-1739-49fe-89e4-9d9b39181421",
+      "width": 0,
+      "x": 1057,
+      "y": 130,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1346,
+      "keepRatio": true,
+      "layer": "Malam",
+      "name": "darkPanel",
+      "persistentUuid": "0b13174c-ff02-4661-a69c-9694902c2576",
+      "width": 1904,
+      "x": 0,
+      "y": 0,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "426e3b04-28c7-4a49-8f2f-d5f967ccba31",
+      "width": 0,
+      "x": 1305,
+      "y": 528,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "dace08a4-fdea-42e1-95c8-905e795f4851",
+      "width": 0,
+      "x": 1241,
+      "y": 528,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "a6cb5820-7164-4800-8b55-f43b3e5ca27e",
+      "width": 0,
+      "x": 1305,
+      "y": 656,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "67c59232-c533-4581-8f79-47d54e2343e4",
+      "width": 0,
+      "x": 1352,
+      "y": 368,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "4890dc68-9e22-4242-ba5b-92a74fbe9821",
+      "width": 0,
+      "x": 1305,
+      "y": 817,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "62d8ac54-d729-4c8b-a809-beaeac7fb0cb",
+      "width": 0,
+      "x": 1257,
+      "y": 1072,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "db774e5c-05cb-4303-9434-9dac058416a5",
+      "width": 0,
+      "x": 936,
+      "y": 1072,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "22d71da4-d937-419b-a852-5b37f213b0d4",
+      "width": 0,
+      "x": 505,
+      "y": 763,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "78ab23fb-c1a8-4fc5-9a1a-ee095b6a3b5d",
+      "width": 0,
+      "x": 632,
+      "y": 639,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "a13cab5d-941b-4668-b490-e3f4df3a39be",
+      "width": 0,
+      "x": 697,
+      "y": 528,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "c2ca9447-a314-4466-8253-2a73c33159e9",
+      "width": 0,
+      "x": 889,
+      "y": 527,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "4cdf8fe7-eedc-44b1-bf84-544eaaf5355d",
+      "width": 0,
+      "x": 1017,
+      "y": 529,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "5bfb2786-337d-42cd-97ea-890e9352fb78",
+      "width": 0,
+      "x": 136,
+      "y": 768,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "a25197de-ab64-4ed6-9752-e7f9e7f1c61f",
+      "width": 0,
+      "x": 105,
+      "y": 656,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "e87c251b-8fa7-4f6b-a800-6a93a40155a6",
+      "width": 0,
+      "x": 73,
+      "y": 384,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "9b5d5727-9546-4288-b102-37e65e17dcab",
+      "width": 0,
+      "x": 232,
+      "y": 273,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "8fa7101a-f06f-4a31-9cab-02e9494ad686",
+      "width": 0,
+      "x": 297,
+      "y": 272,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "1a16e99b-0b4f-4bf3-a65c-48d01d27a43d",
+      "width": 0,
+      "x": 520,
+      "y": 400,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "962f06b9-4ad0-4af2-8bf6-4a870788e881",
+      "width": 0,
+      "x": 329,
+      "y": 64,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "d5e24570-625e-403d-bf03-be3b142a510c",
+      "width": 0,
+      "x": 713,
+      "y": 64,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Lampu",
+      "name": "LampLight",
+      "persistentUuid": "42cac1e9-5880-4b76-833d-27c41ffb34bc",
+      "width": 0,
+      "x": 873,
+      "y": 368,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 44,
+      "layer": "UI",
+      "name": "hungerText",
+      "persistentUuid": "4305a299-af94-493b-b1fd-3e1efc43241b",
+      "width": 108,
+      "x": 83,
+      "y": 238,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "HungerBar",
+      "persistentUuid": "8ee7c3e2-6fb5-4c17-b4cd-f94942369698",
+      "width": 188,
+      "x": 59,
+      "y": 262,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 108,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "Panel",
+      "persistentUuid": "2917c9ac-7a57-40e3-928a-cba0b89d593e",
+      "width": 170,
+      "x": 1380,
+      "y": 893,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 23,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "OptionFood1",
+      "persistentUuid": "0fb87e8f-2497-4606-8f1d-310f18dfcc35",
+      "width": 31,
+      "x": 1395,
+      "y": 928,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "popupTitleText",
+      "persistentUuid": "abd9d376-d453-4acf-a864-0d79ab63c036",
+      "width": 0,
+      "x": 1430,
+      "y": 912,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "option1Text",
+      "persistentUuid": "82e9808e-bea0-4723-b860-9c5022c95e0d",
+      "width": 0,
+      "x": 1394,
+      "y": 968,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "OptionFood2",
+      "persistentUuid": "2ee3e140-5042-4f8e-9a1d-d8320a32a3f9",
+      "width": 32,
+      "x": 1452,
+      "y": 928,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "option2Text",
+      "persistentUuid": "703e5b7a-3e89-4818-9051-deeb998fa6d6",
+      "width": 0,
+      "x": 1452,
+      "y": 968,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 29,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "OptionFood3",
+      "persistentUuid": "97f71f84-b8e9-4884-8ff5-4fd16c9fc924",
+      "width": 29,
+      "x": 1506,
+      "y": 928,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Popup",
+      "name": "option3Text",
+      "persistentUuid": "a4ca5638-2a5a-4a19-b368-06361a2b3646",
+      "width": 0,
+      "x": 1504,
+      "y": 968,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 50,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "bankIcon",
+      "persistentUuid": "843d42cd-f3bd-43dd-8ee8-1e449a7689fb",
+      "width": 50,
+      "x": 90,
+      "y": 200,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 44,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bankText",
+      "persistentUuid": "61382751-7138-4f8a-a0ab-21ee85adc1cf",
+      "width": 181,
+      "x": 140,
+      "y": 200,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 55,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "dayText",
+      "persistentUuid": "4047f518-bce4-415e-82eb-a1ff4b94ebea",
+      "width": 109,
+      "x": 580,
+      "y": 60,
+      "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1628,54 +2266,6 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "cloth_hidden",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 27
-                      },
-                      {
-                        "x": 123,
-                        "y": 27
-                      },
-                      {
-                        "x": 123,
-                        "y": 115
-                      },
-                      {
-                        "x": 4,
-                        "y": 115
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "name": "ck4",
           "useMultipleDirections": false,
           "directions": [
@@ -1702,20 +2292,68 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 4,
-                        "y": 27
+                        "x": 0,
+                        "y": 0
                       },
                       {
-                        "x": 123,
-                        "y": 27
+                        "x": 64,
+                        "y": 0
                       },
                       {
-                        "x": 123,
-                        "y": 115
+                        "x": 64,
+                        "y": 64
                       },
                       {
-                        "x": 4,
-                        "y": 115
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "cloth_hidden",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
                       }
                     ]
                   ]
@@ -2094,7 +2732,7 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "maxSpeed": 100,
+          "maxSpeed": 75,
           "acceleration": 100000,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -2120,7 +2758,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2156,7 +2800,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2192,7 +2842,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2228,7 +2884,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2264,7 +2926,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2300,7 +2968,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Down6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2348,7 +3022,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2384,7 +3064,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2420,7 +3106,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2456,7 +3148,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2492,7 +3190,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2528,7 +3232,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Left_Right6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2576,7 +3286,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2612,7 +3328,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2648,7 +3370,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2684,7 +3412,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2720,7 +3454,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2756,7 +3496,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Idle_Up6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2804,7 +3550,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2840,7 +3592,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2876,7 +3634,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2912,7 +3676,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2948,7 +3718,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -2984,7 +3760,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Down6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3032,7 +3814,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3068,7 +3856,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3104,7 +3898,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3140,7 +3940,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3176,7 +3982,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3212,7 +4024,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Up6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3260,7 +4078,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3296,7 +4120,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3332,7 +4162,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right3.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3368,7 +4204,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right4.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3404,7 +4246,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right5.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3440,7 +4288,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Walk_Left_Right6.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "PopupPoint",
+                      "x": 16,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 16,
@@ -3493,7 +4347,7 @@
       "string": "Text",
       "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 50,
+      "characterSize": 30,
       "color": {
         "b": 255,
         "g": 255,
@@ -3516,8 +4370,8 @@
         "text": "Text",
         "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
         "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 50,
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
         "color": "255;255;255"
       }
     },
@@ -3597,7 +4451,7 @@
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"playerIcon\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 3\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAMVJREFUWEftlUsOgCAMROUIrlh4/6O5cOURNCZq5FNmaFAwgXXpvBmaYobKx1TWHzpAT6An0BPQJLARy4vuSxeeooz4UUr3pQtrA7DO/deBBlGBVvgCQf3hW0kAUmOn3o6Tk8iyzsE9RNgcAAK+HdtxCuBLJPA5ALFz4iWlEvgnQMz94SRrBvwmsctSPE0CSAbEqZZcxKJM1V4pFQdgRJE4/DZzRKR5QLNDLRYNCBKmf6unMwaEFVYBqLdS4iL1BG8IN5PADuF+USEeTp02AAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAANlJREFUWEftltENhSAMResMruUQjuYQruUMvjzyaoiB9hQ/8CX4C+09vZTiJJ2/qbO+DIDhwF86cBo3J1wQDtiPNQkv81bV3481rS3zhvO6G1XYE1cqhaAgJkBUvAWiFaAUd/VGxIUqQKV698hEJIFQiAgAEddTOB8B5NXTZrpfDZqjWBUNtl5SmmMADAfQNYzeBNqA37wYgELcxb24947i3zi95nv+DOdTTmdBbd17mt3xWrKU/sp74mYPeKPVgiDCGu86EAGJCDcDUPvpvrADNDHdNwC6O/ABXYKMIZ7W8m4AAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAUxJREFUWEdjZBhgwDjA9jOMOmA0BEZDgOQQ4GOX/o8r6376+ZRk80jSALLcX5WXQVhKGuyGt8+eorA33v7MQKojiHYAuuXYQgHkIFIdQZIDkuw1UOxFDgGYxLyDN0gKBaIcgM33IMthABYlsGghJRSIdgCy72GWgyxCThPkhALZDgBZfmRGKINNxmoMR5ASDUQ7AORTEABZDAIgy2EA5AgQQFZDbG4gygEgw2H5H+brF4db4A6QsK2BhwZIkFjLQWpJcgDM1yAfY3MAyECQHE0cAAsFZIvRywJQSJBiOUkhAHMAq6shw+O6YIxySLZpLcPv3efp4wBuZRYGUc3fYEe8vs4Kpr/e/TMwDoA5guYOAOUCWPxrLN0I9jVyKNyI9geLkZoOSMoFMAdwmSVi6Pt2aj64mqaZAzBSHZUEiA4BKtmHYcyoA0ZDYDQEAG3NuSFfHntqAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"playerIcon4\"],\"name\":\"playerIcon\"}}",
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"playerIcon\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 3\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAMVJREFUWEftlUsOgCAMROUIrlh4/6O5cOURNCZq5FNmaFAwgXXpvBmaYobKx1TWHzpAT6An0BPQJLARy4vuSxeeooz4UUr3pQtrA7DO/deBBlGBVvgCQf3hW0kAUmOn3o6Tk8iyzsE9RNgcAAK+HdtxCuBLJPA5ALFz4iWlEvgnQMz94SRrBvwmsctSPE0CSAbEqZZcxKJM1V4pFQdgRJE4/DZzRKR5QLNDLRYNCBKmf6unMwaEFVYBqLdS4iL1BG8IN5PADuF+USEeTp02AAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAANlJREFUWEftltENhSAMResMruUQjuYQruUMvjzyaoiB9hQ/8CX4C+09vZTiJJ2/qbO+DIDhwF86cBo3J1wQDtiPNQkv81bV3481rS3zhvO6G1XYE1cqhaAgJkBUvAWiFaAUd/VGxIUqQKV698hEJIFQiAgAEddTOB8B5NXTZrpfDZqjWBUNtl5SmmMADAfQNYzeBNqA37wYgELcxb24947i3zi95nv+DOdTTmdBbd17mt3xWrKU/sp74mYPeKPVgiDCGu86EAGJCDcDUPvpvrADNDHdNwC6O/ABXYKMIZ7W8m4AAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAVBJREFUWEdjZBhgwDjA9jOMOmA0BEZDgOQQ4GOX/o8r6376+ZRk80jSALLcX5WXQVhKGuyGt8+eorA33v7MQKojiHYAuuXYQgHkIFIdQZIDkuw1UOxFDgGYxLyDN0gKBaIcgM33IMthABYlsGghJRSIdgCy72GWgyxCThPkhALZDgBZfmRGKINNxmoMR5ASDUQ7AORTEABZDAIgy2EA5AgQQFZDbG4gygEgw2H5H+ZrkNiLwy0MErY1cAfBHEKs5SCNJDkA5msVbX2MXHjn6kWwGMgRNHEALBRAvsYFQKFBiuUkhQDMAayuhgyP64Ix3CDbtJbh9+7z9HEAtzILg6jmb7AjXl9nBdNf7/4ZGAfAHEFzB4ByASz+NZZuBPsaORRuRPuDxUhNByTlApgDuMwSMfR9OzUfXE3TzAE4kz6FEkSHAIX24NQ+6oDREBgNAQBhg7YhTfAImgAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"playerIcon4\"],\"name\":\"playerIcon\"}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -5030,14 +5884,937 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "timerText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 80,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 80,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "debugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 80,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 80,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "darkPanel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "LampLight",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 40,
+        "color": "219;172;77",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "hungerText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Hunger",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Hunger",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "5c37cb58ddc519829264b5ff95dd80416c82e89b60bfa67c6c3852154ec2b632",
+      "name": "HungerBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": true,
+        "BarTopPadding": 4,
+        "BarBottomPadding": 6,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "MaxValue": 100,
+        "InitialValue": 100
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 34,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 224
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Green Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 24
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Green Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 24
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Full",
+          "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Full",
+            "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 16,
+            "color": "255;255;255"
+          }
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Panel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Panel",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Panel",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 128,
+                        "y": 0
+                      },
+                      {
+                        "x": 128,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OptionFood1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Food4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 43,
+                        "y": 0
+                      },
+                      {
+                        "x": 43,
+                        "y": 31
+                      },
+                      {
+                        "x": 0,
+                        "y": 31
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "popupTitleText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Food Shop",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 2,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Food Shop",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "option1Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "RM 7.40\n20 XP",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "RM 7.40\n20 XP",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 10,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OptionFood2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Food5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 50
+                      },
+                      {
+                        "x": 0,
+                        "y": 50
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "option2Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "RM 14.90\n45 XP",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "RM 14.90\n45 XP",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 10,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OptionFood3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Food3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "option3Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "RM 43.60\n75 XP",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "RM 43.60\n75 XP",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 10,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bankIcon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "bankCoin",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "bankCoin",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 5
+                      },
+                      {
+                        "x": 29,
+                        "y": 5
+                      },
+                      {
+                        "x": 29,
+                        "y": 28
+                      },
+                      {
+                        "x": 3,
+                        "y": 28
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "bankText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "center",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "dayText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 40,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "Popup",
+        "children": [
+          {
+            "objectName": "Panel"
+          },
+          {
+            "objectName": "OptionFood1"
+          },
+          {
+            "objectName": "OptionFood2"
+          },
+          {
+            "objectName": "OptionFood3"
+          },
+          {
+            "objectName": "popupTitleText"
+          },
+          {
+            "objectName": "option1Text"
+          },
+          {
+            "objectName": "option2Text"
+          },
+          {
+            "objectName": "option3Text"
+          }
+        ]
+      },
+      {
+        "folderName": "Light",
+        "children": [
+          {
+            "objectName": "LampLight"
+          }
+        ]
+      },
+      {
         "folderName": "Tile",
         "children": [
+          {
+            "objectName": "Collision"
+          },
+          {
+            "objectName": "Tree"
+          },
           {
             "objectName": "Stalls_Tile"
           },
@@ -5091,16 +6868,43 @@
         "folderName": "UI",
         "children": [
           {
+            "objectName": "LetterKey"
+          },
+          {
+            "objectName": "darkPanel"
+          },
+          {
             "objectName": "XPBar"
+          },
+          {
+            "objectName": "HungerBar"
           },
           {
             "objectName": "ringgitText"
           },
           {
+            "objectName": "bankText"
+          },
+          {
+            "objectName": "timerText"
+          },
+          {
+            "objectName": "dayText"
+          },
+          {
+            "objectName": "debugText"
+          },
+          {
             "objectName": "levelText"
           },
           {
+            "objectName": "hungerText"
+          },
+          {
             "objectName": "ringgitIcon"
+          },
+          {
+            "objectName": "bankIcon"
           },
           {
             "objectName": "playerIcon"
@@ -5108,535 +6912,299 @@
         ]
       },
       {
-        "objectName": "Tree"
-      },
-      {
-        "objectName": "Collision"
-      },
-      {
         "objectName": "Player"
-      },
-      {
-        "objectName": "LetterKey"
       }
     ]
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "Collision"
-          ]
-        },
-        {
-          "type": {
-            "value": "ShowLayer"
-          },
-          "parameters": [
-            "",
-            "\"Transition\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadMusic"
-          },
-          "parameters": [
-            "",
-            "CK1_music_bg.mp3"
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadMusic"
-          },
-          "parameters": [
-            "",
-            "market.mp3"
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadMusic"
-          },
-          "parameters": [
-            "",
-            "main_music_bg.mp3"
-          ]
-        },
-        {
-          "type": {
-            "value": "PrioritizeLoadingOfScene"
-          },
-          "parameters": [
-            "",
-            "\"Luqman_CK1\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadSound"
-          },
-          "parameters": [
-            "",
-            "walk_sfx (mp3cut.net).mp3"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "main_music_bg.mp3",
-            "0",
-            "yes",
-            "5",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-          },
-          "parameters": [
-            "blackBox",
-            "Tween",
-            "\"fading\"",
-            "0",
-            "\"swingFrom\"",
-            "2",
-            "no"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "Player",
-            "Collision",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ClampCamera"
-          },
-          "parameters": [
-            "",
-            "-64",
-            "-64",
-            "1712",
-            "1216",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Player_Movement"
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Enter Mini Game",
+      "name": "Game Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "DepartScene"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK1_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK2_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
+              "parameters": [
+                ""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Montre"
+                "value": "CentreCamera"
               },
               "parameters": [
-                "LetterKey",
+                "",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "canAccess",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Preload Resources"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PreloadMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "CK1_music_bg.mp3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PreloadMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "market.mp3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PreloadMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "main_music_bg.mp3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrioritizeLoadingOfScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Luqman_CK1\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PreloadSound"
+                  },
+                  "parameters": [
+                    "",
+                    "walk_sfx (mp3cut.net).mp3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "main_music_bg.mp3",
+                    "0",
+                    "yes",
+                    "5",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Show/Hide - Layer/Object"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Collision"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Transition\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Malam\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LampLight"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "blackBox",
+                    "Tween",
+                    "\"fading\"",
+                    "0",
+                    "\"swingFrom\"",
+                    "2",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "darkPanel",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Camera Follow"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Player",
+                "Collision",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "3",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "-64",
+                "-64",
+                "1712",
+                "1216",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CopyCameraSettings::CopyCameraSettings"
+              },
+              "parameters": [
+                "",
+                "",
+                "0",
+                "\"Lampu\"",
+                "0",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CopyCameraSettings::CopyCameraSettings"
+              },
+              "parameters": [
+                "",
+                "",
+                "0",
+                "\"Popup\"",
+                "0",
+                "",
+                "",
+                "",
+                "",
                 ""
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::And"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK1_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK2_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "LetterKey"
-              ]
-            }
-          ]
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "CK1",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "OpacityCapability::OpacityBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "CK1_Minigame",
-                    "Opacity",
-                    "=",
-                    "125"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK1_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"e\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "blackBox",
-                        "Tween",
-                        "\"fading\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "2"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Luqman_CK1\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "CK2",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "OpacityCapability::OpacityBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "CK2_Minigame",
-                    "Opacity",
-                    "=",
-                    "125"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CK2_Minigame",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "ringgitTotal",
-                    ">=",
-                    "5"
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"e\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                      },
-                      "parameters": [
-                        "blackBox",
-                        "Tween",
-                        "\"fading\"",
-                        "255",
-                        "\"linear\"",
-                        "1",
-                        "no"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "2"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Scene"
-                          },
-                          "parameters": [
-                            "",
-                            "\"CK2\"",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
         }
       ],
       "parameters": []
@@ -5646,74 +7214,49 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "UI",
+      "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "Level Up Event",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "careerXP.XP",
-                    ">=",
-                    "careerXP.XP_Required"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "careerXP.Level",
-                    "+",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "careerXP.XP",
-                    "-",
-                    "careerXP.XP_Required"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "careerXP.XP_Required",
-                    "=",
-                    "int(ceil(10 * pow(careerXP.Level, 1.3)))"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Player_Movement"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PlayerStats"
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Timer",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "UpdateGlobalTimers"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "DayNightCycle"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -5724,10 +7267,10 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "ringgitText",
+                "timerText",
                 "Text",
                 "=",
-                "\"RM \" + ToString(roundTo(ringgitTotal, 2))"
+                "TimeFormatter::SecondsToHHMMSS(globalTimer)"
               ]
             },
             {
@@ -5735,35 +7278,788 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "levelText",
+                "dayText",
                 "Text",
                 "=",
-                "\"Level \"+ careerXP.Level"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "XPBar",
-                "=",
-                "careerXP.XP",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
-              },
-              "parameters": [
-                "XPBar",
-                "=",
-                "careerXP.XP_Required",
-                ""
+                "\"Day \" + dayCount"
               ]
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Enter Areas",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Mini Games",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "canAccess",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK1_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK4_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "LetterKey",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Barista Rush",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CK1_Minigame",
+                            "Opacity",
+                            "=",
+                            "125"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CK2_Minigame",
+                            "Opacity",
+                            "=",
+                            "125"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CK4_Minigame",
+                            "Opacity",
+                            "=",
+                            "125"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK1_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"e\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                              },
+                              "parameters": [
+                                "blackBox",
+                                "Tween",
+                                "\"fading\"",
+                                "255",
+                                "\"linear\"",
+                                "1",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "2"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Scene"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"Luqman_CK1\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK4_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "KeyFromTextPressed"
+                              },
+                              "parameters": [
+                                "",
+                                "\"e\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                              },
+                              "parameters": [
+                                "blackBox",
+                                "Tween",
+                                "\"fading\"",
+                                "255",
+                                "\"linear\"",
+                                "1",
+                                "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "2"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Scene"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"Bank_CK4\"",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK1_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CK4_Minigame",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "canAccess",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "LetterKey"
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "disabled": true,
+              "folded": true,
+              "name": "CK2",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "CK2_Minigame",
+                        "Opacity",
+                        "=",
+                        "125"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CK2_Minigame",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "ringgitTotal",
+                        ">=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"e\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "blackBox",
+                            "Tween",
+                            "\"fading\"",
+                            "255",
+                            "\"linear\"",
+                            "1",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"CK2\"",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Pop Up",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Food Area"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CK2_Minigame",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "FoodPopup",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CK2_Minigame",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "FoodPopup"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "OptionFood1",
+                    "ButtonFSM",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    "-",
+                    "7.40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    "+",
+                    "20"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "hungerMeter.hunger",
+                    "+",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushNumber"
+                  },
+                  "parameters": [
+                    "ringgitSpent",
+                    "7.40"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "OptionFood2",
+                    "ButtonFSM",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    "-",
+                    "14.90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    "+",
+                    "45"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "hungerMeter.hunger",
+                    "+",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushNumber"
+                  },
+                  "parameters": [
+                    "ringgitSpent",
+                    "7.40"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "OptionFood3",
+                    "ButtonFSM",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    "-",
+                    "43.60"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "careerXP.XP",
+                    "+",
+                    "75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "hungerMeter.hunger",
+                    "+",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushNumber"
+                  },
+                  "parameters": [
+                    "ringgitSpent",
+                    "43.60"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -5810,22 +8106,139 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Debugging",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-          },
-          "parameters": [
-            "",
-            "\"mappart\"",
-            "0",
-            "0",
-            "100"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"k\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "careerXP.XP",
+                "+",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"PlayerStatStorage\"",
+                "\"Stat_Ringgit\"",
+                "ringgitTotal"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"PlayerStatStorage\"",
+                "\"Stat_XP\"",
+                "careerXP.XP"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"PlayerStatStorage\"",
+                "\"Stat_Level\"",
+                "careerXP.Level"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"PlayerStatStorage\"",
+                "\"Stat_Require\"",
+                "careerXP.XP_Required"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"PlayerStatStorage\"",
+                "\"Game_Day\"",
+                "dayCount"
+              ]
+            },
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debugText",
+                "Text",
+                "=",
+                "ToString(roundTo(globalTimer, 0))"
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -5860,16 +8273,163 @@
           "effectType": "Scene3D::HemisphereLight",
           "name": "3D Light",
           "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
+            "elevation": 90,
+            "intensity": 0.5,
             "rotation": 0
           },
           "stringParameters": {
-            "groundColor": "64;64;64",
+            "groundColor": "127;127;127",
             "skyColor": "255;255;255",
             "top": "Y-"
           },
           "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Malam",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Lampu",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Popup",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
         }
       ]
     },
@@ -5938,12 +8498,114 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "debug",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Layer",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",

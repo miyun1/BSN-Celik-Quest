@@ -141,6 +141,24 @@
             "+",
             "nett + tipsGain"
           ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "ringgitGain",
+            "nett + tipsGain"
+          ]
+        },
+        {
+          "type": {
+            "value": "PushNumber"
+          },
+          "parameters": [
+            "xpGain",
+            "careerXP.XP"
+          ]
         }
       ]
     }

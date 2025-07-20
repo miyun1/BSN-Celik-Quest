@@ -435,9 +435,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Top margin",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MarginTop"
         },
         {
@@ -445,9 +442,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Bottom margin",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MarginBottom"
         },
         {
@@ -455,9 +449,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Left margin",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MarginLeft"
         },
         {
@@ -465,9 +456,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Right margin",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MarginRight"
         }
       ],

@@ -628,8 +628,6 @@
           "value": "",
           "type": "Behavior",
           "label": "Scalable capability",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "ScalableCapability::ScalableBehavior"
           ],
@@ -639,8 +637,6 @@
           "value": "",
           "type": "Behavior",
           "label": "Sway uses the tween behavior",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "Tween::TweenBehavior"
           ],
@@ -650,72 +646,56 @@
           "value": "-5",
           "type": "Number",
           "label": "Maximum angle to the left (in degrees) - Use a negative number",
-          "description": "",
           "group": "Angle",
-          "extraInformation": [],
           "name": "AngleLeft"
         },
         {
           "value": "5",
           "type": "Number",
           "label": "Maximum angle to the right (in degrees) - Use a positive number",
-          "description": "",
           "group": "Angle",
-          "extraInformation": [],
           "name": "AngleRight"
         },
         {
           "value": "1",
           "type": "Number",
           "label": "Mininum value for random tween time range for angle (seconds)",
-          "description": "",
           "group": "Angle",
-          "extraInformation": [],
           "name": "AngleTimeMin"
         },
         {
           "value": "3",
           "type": "Number",
           "label": "Maximum value for random tween time range for angle (seconds)",
-          "description": "",
           "group": "Angle",
-          "extraInformation": [],
           "name": "AngleTimeMax"
         },
         {
           "value": "1",
           "type": "Number",
           "label": "Minimum Y scale amount",
-          "description": "",
           "group": "Y scale",
-          "extraInformation": [],
           "name": "YScaleMin"
         },
         {
           "value": "1.2",
           "type": "Number",
           "label": "Maximum Y scale amount",
-          "description": "",
           "group": "Y scale",
-          "extraInformation": [],
           "name": "YScaleMax"
         },
         {
           "value": "1",
           "type": "Number",
           "label": "Mininum value for random tween time range for Y scale (seconds)",
-          "description": "",
           "group": "Y scale",
-          "extraInformation": [],
           "name": "YScaleTimeMin"
         },
         {
           "value": "3",
           "type": "Number",
           "label": "Maximum value for random tween time range for Y scale (seconds)",
-          "description": "",
           "group": "Y scale",
-          "extraInformation": [],
           "name": "YScaleTimeMax"
         }
       ],

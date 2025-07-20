@@ -61,7 +61,7 @@
     {
       "name": "shiftTimer",
       "type": "number",
-      "value": 60
+      "value": 20
     },
     {
       "name": "customerCount",
@@ -4021,6 +4021,16 @@
         },
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "hungerMeter.hunger",
+            "-",
+            "20"
+          ]
+        },
+        {
+          "type": {
             "value": "HideLayer"
           },
           "parameters": [
@@ -4147,6 +4157,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4371,6 +4382,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6462,6 +6474,13 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "UpdateGlobalTimers"
     }
   ],
   "layers": [

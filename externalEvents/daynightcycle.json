@@ -1,0 +1,62 @@
+{
+  "associatedLayout": "HomeWorld",
+  "name": "DayNightCycle",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "globalTimer",
+            "<=",
+            "(dayTimer * 1/4)"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+          },
+          "parameters": [
+            "darkPanel",
+            "Tween",
+            "\"night\"",
+            "200",
+            "\"linear\"",
+            "10",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "LampLight",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "canAccess",
+            "False",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}
