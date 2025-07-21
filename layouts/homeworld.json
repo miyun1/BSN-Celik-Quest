@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.40575189059441147,
+    "zoomFactor": 0.4633111824514323,
     "windowMask": false
   },
   "objectsGroups": [
@@ -564,8 +564,8 @@
       "name": "Player",
       "persistentUuid": "14d79c34-68b7-459e-b7ce-6cf86f91c31a",
       "width": 0,
-      "x": 1595,
-      "y": 587,
+      "x": 1600,
+      "y": 585,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -1178,8 +1178,8 @@
       "name": "debugText",
       "persistentUuid": "093a1d53-1739-49fe-89e4-9d9b39181421",
       "width": 0,
-      "x": 1057,
-      "y": 130,
+      "x": 906,
+      "y": 111,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -1750,6 +1750,22 @@
       "x": 580,
       "y": 60,
       "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "debug",
+      "name": "debugText2",
+      "persistentUuid": "cb9b6fe4-722f-4af6-ae32-41e7390c9fdc",
+      "width": 0,
+      "x": 901,
+      "y": 238,
+      "zOrder": 41,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6764,6 +6780,48 @@
         "characterSize": 40,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "debugText2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 80,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 80,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -6895,6 +6953,9 @@
             "objectName": "debugText"
           },
           {
+            "objectName": "debugText2"
+          },
+          {
             "objectName": "levelText"
           },
           {
@@ -6922,12 +6983,12 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Game Start",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6940,6 +7001,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "lastPlayerPos.posX"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "lastPlayerPos.posY"
+              ]
+            },
             {
               "type": {
                 "value": "CentreCamera"
@@ -7202,6 +7283,81 @@
                 "",
                 "",
                 ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Game Rules",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ringgitTotal",
+                "<=",
+                "-500"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "blackBox",
+                "Tween",
+                "\"fading\"",
+                "255",
+                "\"linear\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"BankcruptScene\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -8232,7 +8388,38 @@
                 "debugText",
                 "Text",
                 "=",
-                "ToString(roundTo(globalTimer, 0))"
+                "lastPlayerPos.posX"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debugText2",
+                "Text",
+                "=",
+                "lastPlayerPos.posY"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "lastPlayerPos.posX",
+                "=",
+                "Player.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "lastPlayerPos.posY",
+                "=",
+                "Player.CenterY()"
               ]
             }
           ]
@@ -8512,7 +8699,7 @@
       "isLocked": false,
       "name": "debug",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

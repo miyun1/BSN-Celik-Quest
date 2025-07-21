@@ -2224,6 +2224,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "bankStruct",
       "type": "structure",
       "children": [
@@ -2250,6 +2251,7 @@
       "value": 0
     },
     {
+      "folded": true,
       "name": "ringgitSpent",
       "type": "array",
       "children": []
@@ -2302,6 +2304,22 @@
       "name": "dayTimer",
       "type": "number",
       "value": 60
+    },
+    {
+      "name": "lastPlayerPos",
+      "type": "structure",
+      "children": [
+        {
+          "name": "posX",
+          "type": "number",
+          "value": 1600
+        },
+        {
+          "name": "posY",
+          "type": "number",
+          "value": 585
+        }
+      ]
     }
   ],
   "layouts": [
@@ -2312,6 +2330,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/homeworld"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/bankcruptscene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

@@ -676,6 +676,26 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "lastPlayerPos.posX",
+                "=",
+                "1600"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "lastPlayerPos.posY",
+                "=",
+                "585"
+              ]
+            },
+            {
+              "type": {
                 "value": "ClearVariableChildren"
               },
               "parameters": [
