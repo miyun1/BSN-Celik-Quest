@@ -1,0 +1,72 @@
+{
+  "associatedLayout": "StartScene",
+  "name": "SaveStat",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Ringgit\"",
+            "ringgitTotal"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_XP\"",
+            "careerXP.XP"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Level\"",
+            "careerXP.Level"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Require\"",
+            "careerXP.XP_Required"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Bank\"",
+            "bankStruct.bankBalance"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Game_Day\"",
+            "dayCount"
+          ]
+        }
+      ]
+    }
+  ]
+}

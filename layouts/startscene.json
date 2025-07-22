@@ -496,74 +496,33 @@
           "parameters": []
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "ReadNumberFromStorage"
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
           },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Ringgit\"",
-            "",
-            "ringgitTotal"
-          ]
+          "target": "LoadStat"
         },
         {
-          "type": {
-            "value": "ReadNumberFromStorage"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_XP\"",
-            "",
-            "careerXP.XP"
-          ]
-        },
-        {
-          "type": {
-            "value": "ReadNumberFromStorage"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Level\"",
-            "",
-            "careerXP.Level"
-          ]
-        },
-        {
-          "type": {
-            "value": "ReadNumberFromStorage"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Require\"",
-            "",
-            "careerXP.XP_Required"
-          ]
-        },
-        {
-          "type": {
-            "value": "ReadNumberFromStorage"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Game_Day\"",
-            "",
-            "dayCount"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-          },
-          "parameters": [
-            "blackBox",
-            "Tween",
-            "\"fading\"",
-            "255",
-            "\"linear\"",
-            "1",
-            "no"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "blackBox",
+                "Tween",
+                "\"fading\"",
+                "255",
+                "\"linear\"",
+                "1",
+                "no"
+              ]
+            }
           ]
         }
       ]
@@ -596,7 +555,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -616,59 +574,15 @@
           "parameters": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Ringgit\"",
-            "ringgitTotal"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_XP\"",
-            "careerXP.XP"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Level\"",
-            "careerXP.Level"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Stat_Require\"",
-            "careerXP.XP_Required"
-          ]
-        },
-        {
-          "type": {
-            "value": "EcrireFichierExp"
-          },
-          "parameters": [
-            "\"PlayerStatStorage\"",
-            "\"Game_Day\"",
-            "dayCount"
-          ]
-        }
-      ],
+      "actions": [],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "SaveStat"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],

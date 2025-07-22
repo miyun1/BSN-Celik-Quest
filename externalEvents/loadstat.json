@@ -1,0 +1,78 @@
+{
+  "associatedLayout": "StartScene",
+  "name": "LoadStat",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Ringgit\"",
+            "",
+            "ringgitTotal"
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_XP\"",
+            "",
+            "careerXP.XP"
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Level\"",
+            "",
+            "careerXP.Level"
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Require\"",
+            "",
+            "careerXP.XP_Required"
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Stat_Bank\"",
+            "",
+            "bankStruct.bankBalance"
+          ]
+        },
+        {
+          "type": {
+            "value": "ReadNumberFromStorage"
+          },
+          "parameters": [
+            "\"PlayerStatStorage\"",
+            "\"Game_Day\"",
+            "",
+            "dayCount"
+          ]
+        }
+      ]
+    }
+  ]
+}

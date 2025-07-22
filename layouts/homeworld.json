@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4633111824514323,
+    "zoomFactor": 0.7619362677198169,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1726,7 +1726,7 @@
       "depth": 1,
       "height": 44,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "bankText",
       "persistentUuid": "61382751-7138-4f8a-a0ab-21ee85adc1cf",
       "width": 181,
@@ -1766,6 +1766,23 @@
       "x": 901,
       "y": 238,
       "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 64,
+      "height": 47,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "skipButton",
+      "persistentUuid": "0a1e9d6b-4f09-4459-b88e-a0753a11dd1e",
+      "width": 116,
+      "x": 575,
+      "y": 169,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6822,6 +6839,92 @@
         "characterSize": 80,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
+      "name": "skipButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 4,
+        "BottomPadding": 6,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0,
+        "LabelText": "SKIP"
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Transparent Button With White Blue Border_Hovered.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Transparent Button With White Blue Border_Idle.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "SKIP",
+          "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "SKIP",
+            "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Transparent Button With White Blue Border_Pressed.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -6969,6 +7072,9 @@
           },
           {
             "objectName": "playerIcon"
+          },
+          {
+            "objectName": "skipButton"
           }
         ]
       },
@@ -7295,6 +7401,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Game Rules",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7370,6 +7477,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7387,6 +7495,88 @@
             "includeConfig": 0
           },
           "target": "PlayerStats"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "skipButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "skipButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "hungerMeter.hunger",
+                "-",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "blackBox",
+                "Tween",
+                "\"fadingCK3\"",
+                "255",
+                "\"linear\"",
+                "1",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"CK3\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -7396,6 +7586,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Timer",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7474,6 +7665,16 @@
                     "canAccess",
                     "True",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "hungerMeter.hunger",
+                    ">=",
+                    "40"
                   ]
                 }
               ],
@@ -7956,6 +8157,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Pop Up",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8033,6 +8235,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    ">=",
+                    "7.40"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
@@ -8095,6 +8307,16 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    ">=",
+                    "14.90"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
@@ -8155,6 +8377,16 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ringgitTotal",
+                    ">=",
+                    "43.60"
+                  ]
+                },
                 {
                   "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
@@ -8315,63 +8547,27 @@
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "EcrireFichierExp"
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
               },
-              "parameters": [
-                "\"PlayerStatStorage\"",
-                "\"Stat_Ringgit\"",
-                "ringgitTotal"
-              ]
+              "target": "SaveStat"
             },
             {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"PlayerStatStorage\"",
-                "\"Stat_XP\"",
-                "careerXP.XP"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"PlayerStatStorage\"",
-                "\"Stat_Level\"",
-                "careerXP.Level"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"PlayerStatStorage\"",
-                "\"Stat_Require\"",
-                "careerXP.XP_Required"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"PlayerStatStorage\"",
-                "\"Game_Day\"",
-                "dayCount"
-              ]
-            },
-            {
-              "type": {
-                "value": "Quit"
-              },
-              "parameters": [
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -8699,7 +8895,7 @@
       "isLocked": false,
       "name": "debug",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

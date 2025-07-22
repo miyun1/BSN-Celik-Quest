@@ -1998,6 +1998,62 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/984a68a8bbb562d3f01a8a1993720778df07d37bb3314ed6f1aaf3d4f0edede3_Square Blue Slider Thumb.png",
           "name": "Square Blue Slider Thumb.png"
         }
+      },
+      {
+        "file": "assets/Square Green Slider Thumb.png.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Square Green Slider Thumb.png.png\"}",
+        "name": "Square Green Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BronzeCard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/BronzeCard.png\"}",
+        "name": "BronzeCard",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BronzeChosen.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/BronzeChosen.png\"}",
+        "name": "BronzeChosen",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SilverCard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SilverCard",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SilverChosen.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SilverChosen",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/GoldCard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/GoldCard.png\"}",
+        "name": "GoldCard",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/GoldChosen.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "GoldChosen",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2236,14 +2292,19 @@
         {
           "name": "chargeRate",
           "type": "number",
-          "value": 1.5
+          "value": 0.006
         },
         {
           "name": "passiveRate",
           "type": "number",
-          "value": 0.11
+          "value": 0.015
         }
       ]
+    },
+    {
+      "name": "cardActive",
+      "type": "boolean",
+      "value": false
     },
     {
       "name": "passiveGain",
@@ -2306,6 +2367,7 @@
       "value": 60
     },
     {
+      "folded": true,
       "name": "lastPlayerPos",
       "type": "structure",
       "children": [
@@ -2318,6 +2380,123 @@
           "name": "posY",
           "type": "number",
           "value": 585
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "withdrawalStatus",
+      "type": "structure",
+      "children": [
+        {
+          "name": "amount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "pending",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "targetDay",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "investmentBronze",
+      "type": "structure",
+      "children": [
+        {
+          "name": "amount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "dayAmount",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "multiplier",
+          "type": "number",
+          "value": 1.4
+        },
+        {
+          "name": "pending",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "targetDay",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "investmentSilver",
+      "type": "structure",
+      "children": [
+        {
+          "name": "amount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "dayAmount",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "multiplier",
+          "type": "number",
+          "value": 2.8
+        },
+        {
+          "name": "pending",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "targetDay",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "investmentGold",
+      "type": "structure",
+      "children": [
+        {
+          "name": "amount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "dayAmount",
+          "type": "number",
+          "value": 8
+        },
+        {
+          "name": "multiplier",
+          "type": "number",
+          "value": 4.2
+        },
+        {
+          "name": "pending",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "targetDay",
+          "type": "number",
+          "value": 0
         }
       ]
     }
@@ -2376,6 +2555,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/updateglobaltimers"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/savestat"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/loadstat"
     }
   ],
   "eventsFunctionsExtensions": [
