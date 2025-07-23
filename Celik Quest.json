@@ -2359,12 +2359,12 @@
     {
       "name": "globalTimer",
       "type": "number",
-      "value": 60
+      "value": 300
     },
     {
       "name": "dayTimer",
       "type": "number",
-      "value": 60
+      "value": 300
     },
     {
       "folded": true,
@@ -2470,6 +2470,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "investmentGold",
       "type": "structure",
       "children": [

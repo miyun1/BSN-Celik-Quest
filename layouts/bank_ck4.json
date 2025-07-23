@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6244537826599988,
+    "zoomFactor": 0.5653158055126307,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2206,12 +2206,66 @@
                         "=",
                         "dayCount + investmentBronze.dayAmount"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "investButton",
+                        "investCard.B",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "GoldTier",
+                        "Animation",
+                        "=",
+                        "\"GoldCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "SilverTier",
+                        "Animation",
+                        "=",
+                        "\"SilverCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "BronzeTier",
+                        "Animation",
+                        "=",
+                        "\"BronzeCard\""
+                      ]
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "investmentSilver.pending",
+                        "=",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "BooleanObjectVariable"
@@ -2264,12 +2318,66 @@
                         "=",
                         "dayCount + investmentSilver.dayAmount"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "investButton",
+                        "investCard.S",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "GoldTier",
+                        "Animation",
+                        "=",
+                        "\"GoldCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "SilverTier",
+                        "Animation",
+                        "=",
+                        "\"SilverCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "BronzeTier",
+                        "Animation",
+                        "=",
+                        "\"BronzeCard\""
+                      ]
                     }
                   ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "investmentGold.pending",
+                        "=",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "BooleanObjectVariable"
@@ -2321,6 +2429,50 @@
                         "investmentGold.targetDay",
                         "=",
                         "dayCount + investmentGold.dayAmount"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "investButton",
+                        "investCard.G",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "GoldTier",
+                        "Animation",
+                        "=",
+                        "\"GoldCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "SilverTier",
+                        "Animation",
+                        "=",
+                        "\"SilverCard\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "BronzeTier",
+                        "Animation",
+                        "=",
+                        "\"BronzeCard\""
                       ]
                     }
                   ]
