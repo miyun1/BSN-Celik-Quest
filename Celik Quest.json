@@ -26,7 +26,7 @@
     "windowHeight": 720,
     "latestCompilationDirectory": "C:\\Users\\acade\\OneDrive\\Desktop\\Luqman\\RnD\\module\\GDev5\\School Class\\CTF",
     "maxFPS": 0,
-    "minFPS": 20,
+    "minFPS": 24,
     "verticalSync": false,
     "platformSpecificAssets": {
       "android-icon-144": "",
@@ -965,7 +965,7 @@
       {
         "file": "assets/cup3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/cup3.png\"}",
         "name": "cup3",
         "smoothed": false,
         "userAdded": false
@@ -2054,6 +2054,118 @@
         "name": "GoldChosen",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/emptyCup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "emptyCup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sukuCup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "sukuCup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/halfCup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "halfCup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fullCup.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "fullCup",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cup7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cup7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Closed.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Closed",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Open2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Open2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Closed2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Closed2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2650,6 +2762,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/popup"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/objectspawner"
     }
   ],
   "externalLayouts": []

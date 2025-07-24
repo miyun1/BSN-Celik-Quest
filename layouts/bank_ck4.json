@@ -203,7 +203,7 @@
       "persistentUuid": "e96f5932-5b00-43bb-8634-6253b67348ff",
       "width": 195,
       "x": 787,
-      "y": 499,
+      "y": 513,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -237,6 +237,22 @@
       "x": 1034,
       "y": 230,
       "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "investSlider",
+      "persistentUuid": "f3e7680e-fe89-4e96-96ae-93134e6fe326",
+      "width": 0,
+      "x": 767,
+      "y": 484,
+      "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1280,6 +1296,105 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "d32eb2703c5acb4488d36fef28164ddf46d8f5b2f3f7a97fa11640cf8d1d91e9",
+      "name": "investSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "",
+      "variables": [
+        {
+          "name": "canUse",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 3,
+        "BarRightPadding": 3,
+        "BarBottomPadding": 4,
+        "LabelMargin": 4,
+        "StepSize": 0.5,
+        "MinValue": 10,
+        "InitialValue": 10,
+        "ShowLabelAtChanges": true
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 18,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square Blue Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 215
+        },
+        "FillBar": {
+          "bottomMargin": 1,
+          "height": 11,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square Blue Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 1,
+          "width": 11
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "It displays the value when it changes.",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 35,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "It displays the value when it changes.",
+            "font": "",
+            "textAlignment": "",
+            "verticalTextAlignment": "top",
+            "characterSize": 35,
+            "color": "0;0;0"
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 3,
+          "height": 21,
+          "leftMargin": 3,
+          "rightMargin": 3,
+          "texture": "Square Blue Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 21
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1290,6 +1405,9 @@
       },
       {
         "objectName": "withdrawSlider"
+      },
+      {
+        "objectName": "investSlider"
       },
       {
         "objectName": "homeBtn"
