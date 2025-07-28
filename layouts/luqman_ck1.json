@@ -2804,6 +2804,16 @@
           "name": "fillCounter",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "maxFill",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "cupCount",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [
@@ -2823,9 +2833,9 @@
       ],
       "behaviors": [
         {
-          "checkCollisionMask": true,
           "name": "Draggable",
-          "type": "DraggableBehavior::Draggable"
+          "type": "DraggableBehavior::Draggable",
+          "checkCollisionMask": true
         }
       ],
       "animations": [
@@ -2845,7 +2855,7 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 28,
-                    "y": 40
+                    "y": 71
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -2894,7 +2904,7 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 28,
-                    "y": 40
+                    "y": 71
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -2943,7 +2953,7 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 28,
-                    "y": 40
+                    "y": 71
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -2992,7 +3002,7 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 28,
-                    "y": 40
+                    "y": 71
                   },
                   "centerPoint": {
                     "automatic": false,
@@ -5675,15 +5685,6 @@
                     },
                     {
                       "type": {
-                        "value": "DraggableBehavior::Dropped"
-                      },
-                      "parameters": [
-                        "cup",
-                        "Draggable"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "CollisionNP"
                       },
                       "parameters": [
@@ -6170,20 +6171,8 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "buttonMaker",
-                        "cupCreate",
-                        "False",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "CompareObjectTimer"
@@ -8563,7 +8552,28 @@
                             "cup",
                             "Effect",
                             "\"Effect\"",
-                            ""
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "cup",
+                            "Scale",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "cup",
+                            "Draggable",
+                            "no"
                           ]
                         },
                         {
@@ -8576,8 +8586,36 @@
                             "True",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "cup",
+                            "hasFilled",
+                            "False",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "buttonMaker",
+                            "cupCreate",
+                            "True",
+                            ""
+                          ]
                         }
                       ],
+                      "actions": [],
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -8589,8 +8627,80 @@
                               "parameters": [
                                 "cup",
                                 "fillCounter",
-                                "<",
+                                ">=",
+                                "cup.maxFill"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "cup",
+                                "hasFilled",
+                                "True",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                              },
+                              "parameters": [
+                                "cup",
+                                "Animation",
+                                "=",
                                 "3"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "cup",
+                                "Draggable",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "EffectCapability::EffectBehavior::EnableEffect"
+                              },
+                              "parameters": [
+                                "cup",
+                                "Effect",
+                                "\"Effect\"",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "cup",
+                                "hasFilled",
+                                "<",
+                                "cup.maxFill"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "NumberObjectVariable"
+                              },
+                              "parameters": [
+                                "cup",
+                                "fillCounter",
+                                "<",
+                                "cup.maxFill"
                               ]
                             }
                           ],
@@ -8615,46 +8725,6 @@
                                 "Animation",
                                 "=",
                                 "cup.fillCounter"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "NumberObjectVariable"
-                              },
-                              "parameters": [
-                                "cup",
-                                "fillCounter",
-                                ">=",
-                                "3"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetBooleanObjectVariable"
-                              },
-                              "parameters": [
-                                "cup",
-                                "hasFilled",
-                                "True",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "EffectCapability::EffectBehavior::EnableEffect"
-                              },
-                              "parameters": [
-                                "cup",
-                                "Effect",
-                                "\"Effect\"",
-                                "yes"
                               ]
                             }
                           ]
