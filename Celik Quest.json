@@ -1,7 +1,7 @@
 {
   "firstLayout": "StartScene",
   "gdVersion": {
-    "build": 236,
+    "build": 237,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -136,54 +136,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/assets_WalkDrink.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink.png\"}",
-        "name": "assets\\WalkDrink",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_WalkDrink2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink2.png\"}",
-        "name": "assets\\WalkDrink2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_WalkDrink3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink3.png\"}",
-        "name": "assets\\WalkDrink3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_WalkDrink4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink4.png\"}",
-        "name": "assets\\WalkDrink4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_WalkDrink5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink5.png\"}",
-        "name": "assets\\WalkDrink5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/assets_WalkDrink6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_WalkDrink6.png\"}",
-        "name": "assets\\WalkDrink6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Waiting.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Waiting.png\"}",
@@ -307,22 +259,6 @@
         }
       },
       {
-        "file": "openFolded.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "openFolded.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Open.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Open",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Spawner.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -375,14 +311,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Tree",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/ck1.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "ck1",
         "smoothed": false,
         "userAdded": false
       },
@@ -667,14 +595,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/CK2_Minigame.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "CK2_Minigame",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/CK2_Minigame2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -727,102 +647,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Walk_Left_Right6.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink9.png\"}",
-        "name": "Drink6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
-        "name": "Drink7",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
-        "name": "Drink8",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
-        "name": "Drink9",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink10.png\"}",
-        "name": "Drink10",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink11.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink11.png\"}",
-        "name": "Drink11",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Drink12.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Drink12.png\"}",
-        "name": "Drink12",
         "smoothed": false,
         "userAdded": false
       },
@@ -883,54 +707,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/isDrag.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/isDrag2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/isDrag3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/isDrag4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/isDrag5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/isDrag6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "isDrag6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/isDrag7.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -943,30 +719,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "isDrag8",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cup.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "cup",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cup2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "cup2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cup3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/cup3.png\"}",
-        "name": "cup3",
         "smoothed": false,
         "userAdded": false
       },
@@ -1043,26 +795,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/HomeButton.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "HomeButton",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/HomeButton2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/HomeButton2.png\"}",
         "name": "HomeButton2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "hourglass.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "hourglass.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -1175,66 +911,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/playerIcon.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "playerIcon",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/playerIcon2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "playerIcon2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/playerIcon3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "playerIcon3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/playerIcon4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/playerIcon4.png\"}",
         "name": "playerIcon4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fadeLogo.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "fadeLogo",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fadeLogo2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "fadeLogo2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "cqlogo.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "cqlogo.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fadedBox.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/fadedBox.png\"}",
-        "name": "fadedBox",
         "smoothed": false,
         "userAdded": false
       },
@@ -1261,14 +941,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
           "name": "Flat Bar White Border.png"
         }
-      },
-      {
-        "file": "assets/ck7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "ck2",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "file": "assets/Letter Key_A.png",
@@ -1687,22 +1359,6 @@
         "userAdded": false
       },
       {
-        "file": "needsSlot.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "needsSlot.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "wantsSlot.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "wantsSlot.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/ck9.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1781,14 +1437,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/fadedBox2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "fadedBox2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "1.png",
         "kind": "image",
         "metadata": "",
@@ -1844,22 +1492,6 @@
         }
       },
       {
-        "file": "assets/PlayBtn.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "PlayBtn",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/PlayBtn2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "PlayBtn2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/PlayBtn3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1872,14 +1504,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "QuitBtn",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fadedBox3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "fadedBox3",
         "smoothed": false,
         "userAdded": false
       },
@@ -1916,14 +1540,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Return.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Return.png\"}",
-        "name": "Return",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Phone.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1936,22 +1552,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Return2.png\"}",
         "name": "Return2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Return3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Return3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Return4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Return4",
         "smoothed": false,
         "userAdded": false
       },
@@ -2056,58 +1656,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/emptyCup.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "emptyCup",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sukuCup.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "sukuCup",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cup4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "cup4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/halfCup.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "halfCup",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fullCup.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "fullCup",
         "smoothed": false,
         "userAdded": false
       },
@@ -2144,14 +1696,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Closed.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Closed",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Open2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -2164,6 +1708,110 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Closed2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "CP_V1.0.4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CP_V1.0.4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Building_12.png",
         "smoothed": false,
         "userAdded": false
       }
