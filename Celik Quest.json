@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 231,
+    "build": 237,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -440,22 +440,6 @@
         "userAdded": false
       },
       {
-        "file": "Oak_Tree_Small.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Oak_Tree_Small.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Tree",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Tree2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Tree2.png\"}",
@@ -516,6 +500,126 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "CP_V1.0.4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CP_V1.0.4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_1.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Building_12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Building_12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Light_Pole.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Light_Pole",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "atlas_16x.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "atlas_16x.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -1936,6 +2040,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/mainmenu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/assets"
     }
   ],
   "externalEvents": [],
