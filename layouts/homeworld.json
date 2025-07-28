@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.41943397827594614,
+    "zoomFactor": 0.3925161175488601,
     "windowMask": false
   },
   "objectsGroups": [
@@ -8068,6 +8068,15 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "Collision",
+                    "\"CollisionTag\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
@@ -8195,6 +8204,23 @@
                 "",
                 "0",
                 "\"Popup\"",
+                "0",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CopyCameraSettings::CopyCameraSettings"
+              },
+              "parameters": [
+                "",
+                "",
+                "0",
+                "\"CollisionTag\"",
                 "0",
                 "",
                 "",
@@ -9919,6 +9945,55 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Layer",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::AmbientLight",
+          "name": "3D Ammbient Light",
+          "doubleParameters": {
+            "intensity": 0.25
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "CollisionTag",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
