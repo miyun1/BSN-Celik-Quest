@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.37971210019482976,
+    "zoomFactor": 1.430792781313569,
     "windowMask": false
   },
   "objectsGroups": [
@@ -555,7 +555,7 @@
       "depth": 1,
       "height": 1238,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "locked": true,
       "name": "Collision",
       "persistentUuid": "f2384f2f-1732-4c71-a581-ed18f1135e4f",
@@ -589,7 +589,7 @@
       "depth": 1,
       "height": 21,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "locked": true,
       "name": "Collision",
       "persistentUuid": "f9be5911-392f-46d5-9fb0-c02823dd89c8",
@@ -607,7 +607,7 @@
       "depth": 1,
       "height": 21,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "locked": true,
       "name": "Collision",
       "persistentUuid": "54ccf99f-4ad4-4939-9a01-2578fc5d013f",
@@ -646,7 +646,7 @@
       "depth": 1,
       "height": 143,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "e4283ba4-7d5b-4e3d-b3be-41f47f4a85fa",
       "width": 288,
@@ -663,7 +663,7 @@
       "depth": 1,
       "height": 49,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "19aaffbd-a471-4054-8971-f3c0e5d93339",
       "width": 288,
@@ -680,7 +680,7 @@
       "depth": 1,
       "height": 145,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "6e6fe711-2cb2-4742-a07a-4b394312274c",
       "width": 496,
@@ -697,7 +697,7 @@
       "depth": 1,
       "height": 128,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "c546fe54-9e31-474c-a105-04152f861166",
       "width": 336,
@@ -714,7 +714,7 @@
       "depth": 1,
       "height": 42,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "f2b7a3a1-c2b7-4e61-927e-ff4841cc7416",
       "width": 113,
@@ -989,25 +989,9 @@
       "name": "ringgitText",
       "persistentUuid": "649b2a5f-a509-4a05-b552-06024f3c7b3c",
       "width": 169,
-      "x": 140,
-      "y": 150,
+      "x": 250,
+      "y": 123,
       "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 3.0612244897959187,
-      "height": 50,
-      "layer": "UI",
-      "name": "ringgitIcon",
-      "persistentUuid": "d0938576-71e1-4ace-a3d5-733186159336",
-      "width": 50,
-      "x": 90,
-      "y": 150,
-      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1021,8 +1005,8 @@
       "name": "playerIcon",
       "persistentUuid": "6acf4b76-0a08-433d-a44a-da504c2ae045",
       "width": 100,
-      "x": 90,
-      "y": 75,
+      "x": 112,
+      "y": 115,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1047,14 +1031,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 34,
+      "depth": 46.51851851851852,
+      "height": 7.500000000000001,
       "keepRatio": true,
       "layer": "UI",
       "name": "XPBar",
       "persistentUuid": "c12ddd39-0279-4613-a635-1f161ee2ec2f",
-      "width": 112,
-      "x": 140,
+      "width": 157,
+      "x": 210,
       "y": 80,
       "zOrder": 22,
       "numberProperties": [],
@@ -1071,7 +1055,7 @@
       "name": "levelText",
       "persistentUuid": "986fd411-8b84-49df-8275-42fdb136c14c",
       "width": 108,
-      "x": 142,
+      "x": 210,
       "y": 62,
       "zOrder": 23,
       "numberProperties": [],
@@ -1122,7 +1106,7 @@
       "depth": 1,
       "height": 40,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "fe9660f5-99d8-4943-93a5-f6c5334c2c5a",
       "width": 303,
@@ -1139,7 +1123,7 @@
       "depth": 1,
       "height": 40,
       "keepRatio": true,
-      "layer": "",
+      "layer": "CollisionTag",
       "name": "Collision",
       "persistentUuid": "1258a93d-0cce-41d9-998e-375cc6b0e47b",
       "width": 300,
@@ -1703,23 +1687,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0,
-      "height": 50,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "bankIcon",
-      "persistentUuid": "843d42cd-f3bd-43dd-8ee8-1e449a7689fb",
-      "width": 50,
-      "x": 90,
-      "y": 200,
-      "zOrder": 38,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 44,
       "keepRatio": true,
@@ -1727,8 +1694,8 @@
       "name": "bankText",
       "persistentUuid": "61382751-7138-4f8a-a0ab-21ee85adc1cf",
       "width": 181,
-      "x": 140,
-      "y": 200,
+      "x": 250,
+      "y": 167,
       "zOrder": 39,
       "numberProperties": [],
       "stringProperties": [],
@@ -1817,6 +1784,23 @@
       "x": 1888,
       "y": 640,
       "zOrder": 44,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 174,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "PlayerPanel",
+      "persistentUuid": "478642bc-924f-4832-900b-276c288831b0",
+      "width": 370,
+      "x": 30,
+      "y": 30,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4412,9 +4396,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "left",
-      "characterSize": 30,
+      "characterSize": 15,
       "color": {
         "b": 255,
         "g": 255,
@@ -4435,10 +4419,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 30,
+        "characterSize": 15,
         "color": "255;255;255"
       }
     },
@@ -4573,44 +4557,44 @@
       "behaviors": [],
       "content": {
         "PreviousHighValueDuration": 0,
-        "ShowLabel": true,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "MaxValue": 16,
-        "InitialValue": 0
+        "ShowLabel": false,
+        "BarTopPadding": 0,
+        "BarBottomPadding": 0,
+        "BarLeftPadding": 0,
+        "BarRightPadding": 0,
+        "MaxValue": 100,
+        "InitialValue": 50
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 6,
-          "height": 34,
-          "leftMargin": 4,
-          "rightMargin": 4,
-          "texture": "Flat Bar White Border.png",
+          "bottomMargin": 0,
+          "height": 15,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "EmptyBar Experience.png",
           "tiled": false,
-          "topMargin": 6,
-          "width": 224
+          "topMargin": 0,
+          "width": 314
         },
         "Buffer": {
           "bottomMargin": 0,
-          "height": 24,
+          "height": 15,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Flat Bar Green Fill Bar.png",
+          "texture": "FullBar Experience.png2",
           "tiled": false,
           "topMargin": 0,
-          "width": 24
+          "width": 314
         },
         "FillBar": {
           "bottomMargin": 0,
-          "height": 24,
+          "height": 15,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Flat Bar Green Fill Bar.png",
+          "texture": "FullBar Experience.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 24
+          "width": 314
         },
         "Label": {
           "bold": false,
@@ -4662,9 +4646,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "left",
-      "characterSize": 30,
+      "characterSize": 15,
       "color": {
         "b": 255,
         "g": 255,
@@ -4685,10 +4669,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 30,
+        "characterSize": 15,
         "color": "255;255;255"
       }
     },
@@ -6128,9 +6112,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Hunger",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "center",
-      "characterSize": 30,
+      "characterSize": 15,
       "color": {
         "b": 255,
         "g": 255,
@@ -6151,10 +6135,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Hunger",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
-        "characterSize": 30,
+        "characterSize": 15,
         "color": "255;255;255"
       }
     },
@@ -6169,22 +6153,22 @@
       "content": {
         "PreviousHighValueDuration": 0,
         "ShowLabel": true,
-        "BarTopPadding": 4,
-        "BarBottomPadding": 6,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
+        "BarTopPadding": 0,
+        "BarBottomPadding": 0,
+        "BarLeftPadding": 0,
+        "BarRightPadding": 0,
         "MaxValue": 100,
         "InitialValue": 100
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 6,
+          "bottomMargin": 0,
           "height": 34,
-          "leftMargin": 4,
-          "rightMargin": 4,
-          "texture": "Flat Bar White Border.png",
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "EmptyBar Experience.png",
           "tiled": false,
-          "topMargin": 6,
+          "topMargin": 0,
           "width": 224
         },
         "Buffer": {
@@ -6192,7 +6176,7 @@
           "height": 24,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Flat Bar Green Fill Bar.png",
+          "texture": "FullBar Experience.png",
           "tiled": false,
           "topMargin": 0,
           "width": 24
@@ -6202,7 +6186,7 @@
           "height": 24,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Flat Bar Green Fill Bar.png",
+          "texture": "FullBar Experience.png",
           "tiled": false,
           "topMargin": 0,
           "width": 24
@@ -6760,9 +6744,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "left",
-      "characterSize": 30,
+      "characterSize": 15,
       "color": {
         "b": 255,
         "g": 255,
@@ -6783,10 +6767,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
-        "characterSize": 30,
+        "characterSize": 15,
         "color": "255;255;255"
       }
     },
@@ -7694,6 +7678,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PlayerPanel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Profile Base.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 699,
+                        "y": 0
+                      },
+                      {
+                        "x": 699,
+                        "y": 329
+                      },
+                      {
+                        "x": 0,
+                        "y": 329
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7888,6 +7932,9 @@
           },
           {
             "objectName": "skipButton"
+          },
+          {
+            "objectName": "PlayerPanel"
           }
         ]
       },
@@ -9733,7 +9780,7 @@
       "isLocked": false,
       "name": "Lampu",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
@@ -9782,7 +9829,7 @@
       "isLocked": false,
       "name": "Popup",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
@@ -9831,7 +9878,7 @@
       "isLocked": false,
       "name": "UI",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {

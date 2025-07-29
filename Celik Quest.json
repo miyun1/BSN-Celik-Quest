@@ -1814,6 +1814,61 @@
         "name": "assets\\Building_12.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "FullBar Experience.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "FullBar Experience.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FullBar Experience.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/FullBar Experience.png2.png\"}",
+        "name": "FullBar Experience.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "EmptyBar Experience.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "EmptyBar Experience.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EmptyBar Experience.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "EmptyBar Experience.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Profile Base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Profile Base.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Daydream.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Daydream.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/EmptyBar Experience.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "EmptyBar Experience.png3",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2119,12 +2174,12 @@
     {
       "name": "globalTimer",
       "type": "number",
-      "value": 300
+      "value": 60
     },
     {
       "name": "dayTimer",
       "type": "number",
-      "value": 300
+      "value": 60
     },
     {
       "folded": true,
