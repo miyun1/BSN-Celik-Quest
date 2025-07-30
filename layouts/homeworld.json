@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.1343715797162115,
+    "zoomFactor": 0.7619362677198412,
     "windowMask": false
   },
   "objectsGroups": [
@@ -62,6 +62,11 @@
       "name": "cameraZoom",
       "type": "number",
       "value": 2.5
+    },
+    {
+      "name": "isPaused",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -306,8 +311,8 @@
       "name": "CK4_Minigame",
       "persistentUuid": "8e3a010c-4872-4591-a775-b2e3bc2cf52e",
       "width": 0,
-      "x": 1047,
-      "y": 873,
+      "x": 579,
+      "y": 222,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -322,8 +327,8 @@
       "name": "CK5_Minigame",
       "persistentUuid": "91464382-aec4-4689-8af8-f05c6a3d8eef",
       "width": 0,
-      "x": 550,
-      "y": 193,
+      "x": 1038,
+      "y": 759,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -1072,7 +1077,7 @@
       "persistentUuid": "3a1f0c69-08b7-44e9-b768-f9cf79276b2a",
       "width": 20,
       "x": 1594,
-      "y": 565,
+      "y": 561,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -1834,6 +1839,40 @@
       "x": 1176,
       "y": 86,
       "zOrder": 51,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "PanelLayer",
+      "name": "blackPanel",
+      "opacity": 89,
+      "persistentUuid": "8450cf2a-d568-46a0-b2ef-44d47082310c",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 52,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 42.10526315789472,
+      "height": 75,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "settingButton",
+      "persistentUuid": "111271c2-3aa9-41e1-b1c3-0a69d72557c2",
+      "width": 75,
+      "x": 30,
+      "y": 620,
+      "zOrder": 53,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8182,6 +8221,153 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "blackPanel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BlackScreen",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BlackScreen",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 720
+                      },
+                      {
+                        "x": 0,
+                        "y": 720
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
+      "name": "settingButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 4,
+        "BottomPadding": 6,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0,
+        "LabelText": ""
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 114,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "setting (normal).png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 114
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 114,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "setting (normal).png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 114
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "Daydream.ttf",
+          "textAlignment": "center",
+          "characterSize": 6,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "0;0;0",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "Daydream.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "center",
+            "characterSize": 6,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 114,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "setting (pressed).png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 114
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -8378,6 +8564,9 @@
             "objectName": "skipButton"
           },
           {
+            "objectName": "settingButton"
+          },
+          {
             "objectName": "PlayerPanel"
           },
           {
@@ -8385,6 +8574,9 @@
           },
           {
             "objectName": "dayNightSprite"
+          },
+          {
+            "objectName": "blackPanel"
           }
         ]
       },
@@ -9139,7 +9331,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Enter Areas",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10038,6 +10229,110 @@
           "conditions": [
             {
               "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "settingButton",
+                "\"p\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "isPaused",
+                "Toggle",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "isPaused",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PanelLayer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "isPaused",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PanelLayer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "KeyFromTextPressed"
               },
               "parameters": [
@@ -10441,9 +10736,9 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Layer",
+      "name": "PanelLayer",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

@@ -1893,6 +1893,30 @@
         "name": "Moon.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/BlackScreen.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BlackScreen",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "setting (normal).png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"setting (normal).png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "setting (normal).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "setting (pressed).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "setting (pressed).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2339,6 +2363,21 @@
           "value": 0
         }
       ]
+    },
+    {
+      "name": "playerName",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "playerGoals",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "goalAmount",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [

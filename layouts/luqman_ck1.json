@@ -61,7 +61,7 @@
     {
       "name": "shiftTimer",
       "type": "number",
-      "value": 120
+      "value": 30
     },
     {
       "name": "customerCount",
@@ -8739,7 +8739,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8920,7 +8919,7 @@
                       "parameters": [
                         "",
                         "\"HomeWorld\"",
-                        "yes"
+                        ""
                       ]
                     }
                   ]
@@ -9014,7 +9013,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "UI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
