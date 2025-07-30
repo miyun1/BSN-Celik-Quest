@@ -1869,6 +1869,30 @@
         "name": "EmptyBar Experience.png3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "DayNight Base.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"DayNight Base.png\",\"extension\":\".png\"}",
+        "name": "DayNight Base.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Sun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sun.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Moon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Moon.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

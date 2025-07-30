@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.430792781313569,
+    "zoomFactor": 1.1343715797162115,
     "windowMask": false
   },
   "objectsGroups": [
@@ -999,14 +999,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 3,
-      "height": 100,
+      "depth": 5,
+      "height": 154,
       "layer": "UI",
       "name": "playerIcon",
       "persistentUuid": "6acf4b76-0a08-433d-a44a-da504c2ae045",
-      "width": 100,
-      "x": 112,
-      "y": 115,
+      "width": 154,
+      "x": 117,
+      "y": 128,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1032,8 +1032,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 46.51851851851852,
-      "height": 7.500000000000001,
-      "keepRatio": true,
+      "height": 7.5,
       "layer": "UI",
       "name": "XPBar",
       "persistentUuid": "c12ddd39-0279-4613-a635-1f161ee2ec2f",
@@ -1136,16 +1135,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 29,
       "keepRatio": true,
       "layer": "UI",
       "name": "timerText",
       "persistentUuid": "b285a879-bc73-4d59-933c-30a9dc35d2a7",
-      "width": 0,
-      "x": 555,
-      "y": 125,
-      "zOrder": 25,
+      "width": 111,
+      "x": 1121,
+      "y": 140,
+      "zOrder": 50,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1528,8 +1528,8 @@
       "name": "hungerText",
       "persistentUuid": "4305a299-af94-493b-b1fd-3e1efc43241b",
       "width": 108,
-      "x": 83,
-      "y": 238,
+      "x": 146,
+      "y": 219,
       "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
@@ -1539,14 +1539,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 48,
-      "height": 34,
-      "keepRatio": true,
+      "height": 8,
       "layer": "UI",
       "name": "HungerBar",
       "persistentUuid": "8ee7c3e2-6fb5-4c17-b4cd-f94942369698",
-      "width": 188,
-      "x": 59,
-      "y": 262,
+      "width": 305,
+      "x": 42,
+      "y": 239,
       "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
@@ -1710,9 +1709,9 @@
       "layer": "UI",
       "name": "dayText",
       "persistentUuid": "4047f518-bce4-415e-82eb-a1ff4b94ebea",
-      "width": 109,
-      "x": 580,
-      "y": 60,
+      "width": 203,
+      "x": 1075,
+      "y": 186,
       "zOrder": 40,
       "numberProperties": [],
       "stringProperties": [],
@@ -1737,15 +1736,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 64,
-      "height": 47,
+      "depth": 43,
+      "height": 32,
       "keepRatio": true,
       "layer": "UI",
       "name": "skipButton",
       "persistentUuid": "0a1e9d6b-4f09-4459-b88e-a0753a11dd1e",
-      "width": 116,
-      "x": 575,
-      "y": 169,
+      "width": 78,
+      "x": 1136,
+      "y": 208,
       "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
@@ -1760,7 +1759,7 @@
       "name": "City_Tile",
       "persistentUuid": "cea2c197-3d08-4119-b833-03b15063b91a",
       "width": 0,
-      "x": 0,
+      "x": 792,
       "y": -64,
       "zOrder": 1,
       "numberProperties": [],
@@ -1781,7 +1780,7 @@
       "name": "Building_1",
       "persistentUuid": "b4b27b59-604d-44c0-858f-90e0a77e8d84",
       "width": 0,
-      "x": 1888,
+      "x": 2680,
       "y": 640,
       "zOrder": 44,
       "numberProperties": [],
@@ -1801,6 +1800,40 @@
       "x": 30,
       "y": 30,
       "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 131,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "dayNightCycle",
+      "persistentUuid": "1c2a5166-7bc9-4d65-8253-b1e8e346c84e",
+      "width": 132,
+      "x": 1110,
+      "y": 30,
+      "zOrder": 45,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 69,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "dayNightSprite",
+      "persistentUuid": "bd476f94-429f-4f76-9e68-65e1719a0ea4",
+      "width": 67,
+      "x": 1176,
+      "y": 86,
+      "zOrder": 51,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4497,6 +4530,234 @@
       "behaviors": [],
       "animations": [
         {
+          "name": "playerIconIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Idle_Down6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 9,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 5
+                      },
+                      {
+                        "x": 22,
+                        "y": 23
+                      },
+                      {
+                        "x": 9,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "playerIcon",
           "useMultipleDirections": false,
           "directions": [
@@ -4523,20 +4784,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 7
+                        "x": 9,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 7
+                        "x": 22,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 29
+                        "x": 22,
+                        "y": 23
                       },
                       {
-                        "x": 5,
-                        "y": 29
+                        "x": 9,
+                        "y": 23
                       }
                     ]
                   ]
@@ -5948,9 +6209,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "center",
-      "characterSize": 80,
+      "characterSize": 12,
       "color": {
         "b": 255,
         "g": 255,
@@ -5971,10 +6232,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
-        "characterSize": 80,
+        "characterSize": 12,
         "color": "255;255;255"
       }
     },
@@ -6152,23 +6413,23 @@
       "behaviors": [],
       "content": {
         "PreviousHighValueDuration": 0,
-        "ShowLabel": true,
-        "BarTopPadding": 0,
-        "BarBottomPadding": 0,
-        "BarLeftPadding": 0,
-        "BarRightPadding": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 3,
+        "BarBottomPadding": 3,
+        "BarLeftPadding": 2,
+        "BarRightPadding": 2,
         "MaxValue": 100,
         "InitialValue": 100
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 0,
+          "bottomMargin": 3,
           "height": 34,
-          "leftMargin": 0,
-          "rightMargin": 0,
+          "leftMargin": 2,
+          "rightMargin": 2,
           "texture": "EmptyBar Experience.png",
           "tiled": false,
-          "topMargin": 0,
+          "topMargin": 3,
           "width": 224
         },
         "Buffer": {
@@ -6786,9 +7047,9 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+      "font": "Daydream.ttf",
       "textAlignment": "center",
-      "characterSize": 40,
+      "characterSize": 20,
       "color": {
         "b": 255,
         "g": 255,
@@ -6809,10 +7070,10 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+        "font": "Daydream.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
-        "characterSize": 40,
+        "characterSize": 20,
         "color": "255;255;255"
       }
     },
@@ -6902,9 +7163,9 @@
           "smoothed": true,
           "underlined": false,
           "string": "SKIP",
-          "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+          "font": "Daydream.ttf",
           "textAlignment": "center",
-          "characterSize": 20,
+          "characterSize": 6,
           "color": {
             "b": 255,
             "g": 255,
@@ -6912,8 +7173,8 @@
           },
           "content": {
             "bold": true,
-            "isOutlineEnabled": true,
-            "isShadowEnabled": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
             "italic": false,
             "outlineColor": "0;0;0",
             "outlineThickness": 2,
@@ -6925,10 +7186,10 @@
             "smoothed": true,
             "underlined": false,
             "text": "SKIP",
-            "font": "3d58de3ba4305c72907c2b4367cf859232313400b5c22da139d35b13d2273d40_CaveatBrush-Regular.ttf",
+            "font": "Daydream.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "center",
-            "characterSize": 20,
+            "characterSize": 6,
             "color": "255;255;255"
           }
         },
@@ -7738,6 +7999,189 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "dayNightCycle",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "DayNight Base",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "DayNight Base.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 255,
+                        "y": 0
+                      },
+                      {
+                        "x": 255,
+                        "y": 253
+                      },
+                      {
+                        "x": 0,
+                        "y": 253
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "dayNightSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 20,
+            "innerStrength": 0.5,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "211;211;211"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Sun",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Sun.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63.5,
+                    "y": 64.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 127,
+                        "y": 0
+                      },
+                      {
+                        "x": 127,
+                        "y": 129
+                      },
+                      {
+                        "x": 1,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Night",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Moon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63.5,
+                    "y": 64.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 127,
+                        "y": 0
+                      },
+                      {
+                        "x": 127,
+                        "y": 129
+                      },
+                      {
+                        "x": 1,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7935,6 +8379,12 @@
           },
           {
             "objectName": "PlayerPanel"
+          },
+          {
+            "objectName": "dayNightCycle"
+          },
+          {
+            "objectName": "dayNightSprite"
           }
         ]
       },

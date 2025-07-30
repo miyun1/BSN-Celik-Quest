@@ -25,6 +25,17 @@
       "actions": [
         {
           "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "dayNightSprite",
+            "Animation",
+            "=",
+            "\"Night\""
+          ]
+        },
+        {
+          "type": {
             "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
@@ -54,6 +65,40 @@
             "canAccess",
             "False",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "globalTimer",
+            ">",
+            "(dayTimer * 1/4)"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "dayNightSprite",
+            "Animation",
+            "=",
+            "\"Sun\""
           ]
         }
       ]
