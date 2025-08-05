@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7619362677198412,
+    "zoomFactor": 0.5653158055126916,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1764,7 +1764,7 @@
       "name": "City_Tile",
       "persistentUuid": "cea2c197-3d08-4119-b833-03b15063b91a",
       "width": 0,
-      "x": 792,
+      "x": 1755,
       "y": -64,
       "zOrder": 1,
       "numberProperties": [],
@@ -1785,7 +1785,7 @@
       "name": "Building_1",
       "persistentUuid": "b4b27b59-604d-44c0-858f-90e0a77e8d84",
       "width": 0,
-      "x": 2680,
+      "x": 3643,
       "y": 640,
       "zOrder": 44,
       "numberProperties": [],
